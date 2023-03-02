@@ -4,9 +4,7 @@ This repository contains the relevant code to utilize a Convolutional Neural Net
 
 The image database is sourced from the Automated Gleason Grading Challenge 2022 (AGGC2022). 
 
-1. Preprocessing Step:
-
-preprocess_img.py contains all preprocessing steps including:
+1. Preprocessing Step: preprocess_img.py contains all preprocessing steps including:
     - Image segmentation into 256 x 256 patches
     - Image normalization (???)
     
