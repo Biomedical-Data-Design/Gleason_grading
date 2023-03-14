@@ -1,0 +1,1187 @@
+Traceback (most recent call last):
+  File "run_pretrain.py", line 20, in <module>
+    from Dataset.dataset2 import Dataset_name
+  File "/home/yzhao155/Gleason_grading/neural_network_training/Dataset/dataset2.py", line 1, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+0     Subset1_Train_30.tiff
+1     Subset1_Train_28.tiff
+2     Subset1_Train_75.tiff
+3     Subset1_Train_94.tiff
+4     Subset1_Train_98.tiff
+              ...          
+81    Subset1_Train_47.tiff
+82    Subset1_Train_59.tiff
+83    Subset1_Train_63.tiff
+84    Subset1_Train_64.tiff
+85    Subset1_Train_68.tiff
+Name: img, Length: 86, dtype: object
+Subset1_Train_30.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(6560, 1024) (6560,)
+Subset1_Train_28.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f47fa0>
+load
+model_inputed
+(9535, 1024) (9535,)
+Subset1_Train_75.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f700a0>
+load
+model_inputed
+(2102, 1024) (2102,)
+Subset1_Train_94.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f467a0>
+load
+model_inputed
+(7781, 1024) (7781,)
+Subset1_Train_98.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f47fa0>
+load
+model_inputed
+(15488, 1024) (15488,)
+Subset1_Train_55.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea3222050>
+load
+model_inputed
+(6034, 1024) (6034,)
+Subset1_Train_81.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(21240, 1024) (21240,)
+Subset1_Train_5.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f47fa0>
+load
+model_inputed
+(4897, 1024) (4897,)
+Subset1_Train_20.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f00160>
+load
+model_inputed
+(6633, 1024) (6633,)
+Subset1_Train_40.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(4925, 1024) (4925,)
+Subset1_Train_33.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f47fa0>
+load
+model_inputed
+(3946, 1024) (3946,)
+Subset1_Train_24.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(28414, 1024) (28414,)
+Subset1_Train_56.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(3005, 1024) (3005,)
+Subset1_Train_79.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea267e080>
+load
+model_inputed
+(6715, 1024) (6715,)
+Subset1_Train_36.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(4917, 1024) (4917,)
+Subset1_Train_6.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea4151240>
+load
+model_inputed
+(9530, 1024) (9530,)
+Subset1_Train_51.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea267e080>
+load
+model_inputed
+(4594, 1024) (4594,)
+Subset1_Train_38.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(8126, 1024) (8126,)
+Subset1_Train_90.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea4151240>
+load
+model_inputed
+(6744, 1024) (6744,)
+Subset1_Train_49.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(7439, 1024) (7439,)
+Subset1_Train_43.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(2911, 1024) (2911,)
+Subset1_Train_85.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea4151240>
+load
+model_inputed
+(8163, 1024) (8163,)
+Subset1_Train_70.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(10601, 1024) (10601,)
+Subset1_Train_80.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32aa020>
+load
+model_inputed
+(7166, 1024) (7166,)
+Subset1_Train_52.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(16795, 1024) (16795,)
+Subset1_Train_87.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(7770, 1024) (7770,)
+Subset1_Train_60.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32aa020>
+load
+model_inputed
+(4622, 1024) (4622,)
+Subset1_Train_99.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(25357, 1024) (25357,)
+Subset1_Train_93.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(9109, 1024) (9109,)
+Subset1_Train_97.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(5397, 1024) (5397,)
+Subset1_Train_44.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(5209, 1024) (5209,)
+Subset1_Train_21.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(2570, 1024) (2570,)
+Subset1_Train_46.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(7816, 1024) (7816,)
+Subset1_Train_88.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(14678, 1024) (14678,)
+Subset1_Train_54.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(4882, 1024) (4882,)
+Subset1_Train_58.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33cd150>
+load
+model_inputed
+(7677, 1024) (7677,)
+Subset1_Train_25.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f71780>
+load
+model_inputed
+(2802, 1024) (2802,)
+Subset1_Train_9.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(4523, 1024) (4523,)
+Subset1_Train_23.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(2510, 1024) (2510,)
+Subset1_Train_74.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(17801, 1024) (17801,)
+Subset1_Train_42.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(11819, 1024) (11819,)
+Subset1_Train_32.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(5767, 1024) (5767,)
+Subset1_Train_31.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(11364, 1024) (11364,)
+Subset1_Train_73.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(8814, 1024) (8814,)
+Subset1_Train_22.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea4151240>
+load
+model_inputed
+(4862, 1024) (4862,)
+Subset1_Train_83.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(9544, 1024) (9544,)
+Subset1_Train_29.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(13110, 1024) (13110,)
+Subset1_Train_41.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2647f70>
+load
+model_inputed
+(5568, 1024) (5568,)
+Subset1_Train_92.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(5301, 1024) (5301,)
+Subset1_Train_66.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(8061, 1024) (8061,)
+Subset1_Train_65.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(5562, 1024) (5562,)
+Subset1_Train_62.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea41511e0>
+load
+model_inputed
+(3902, 1024) (3902,)
+Subset1_Train_71.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(2355, 1024) (2355,)
+Subset1_Train_86.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(4392, 1024) (4392,)
+Subset1_Train_27.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(2802, 1024) (2802,)
+Subset1_Train_48.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(3359, 1024) (3359,)
+Subset1_Train_26.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(18477, 1024) (18477,)
+Subset1_Train_4.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(32325, 1024) (32325,)
+Subset1_Train_69.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(28462, 1024) (28462,)
+Subset1_Train_67.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(1991, 1024) (1991,)
+Subset1_Train_53.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(1732, 1024) (1732,)
+Subset1_Train_91.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f198d0>
+load
+model_inputed
+(3835, 1024) (3835,)
+Subset1_Train_76.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(4431, 1024) (4431,)
+Subset1_Train_45.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(4324, 1024) (4324,)
+Subset1_Train_57.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(18714, 1024) (18714,)
+Subset1_Train_37.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(6318, 1024) (6318,)
+Subset1_Train_39.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(7707, 1024) (7707,)
+Subset1_Train_82.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(14923, 1024) (14923,)
+Subset1_Train_89.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(8987, 1024) (8987,)
+Subset1_Train_50.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea25bbee0>
+load
+model_inputed
+(1537, 1024) (1537,)
+Subset1_Train_34.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(5061, 1024) (5061,)
+Subset1_Train_3.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f73cd0>
+load
+model_inputed
+(2915, 1024) (2915,)
+Subset1_Train_78.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(11121, 1024) (11121,)
+Subset1_Train_35.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c8e80>
+load
+model_inputed
+(3969, 1024) (3969,)
+Subset1_Train_2.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(6787, 1024) (6787,)
+Subset1_Train_8.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32af340>
+load
+model_inputed
+(10497, 1024) (10497,)
+Subset1_Train_72.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(5211, 1024) (5211,)
+Subset1_Train_61.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(5763, 1024) (5763,)
+Subset1_Train_84.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e73fd0>
+load
+model_inputed
+(4866, 1024) (4866,)
+Subset1_Train_7.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f1af80>
+load
+model_inputed
+(2852, 1024) (2852,)
+Subset1_Train_77.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea33fa8f0>
+load
+model_inputed
+(4266, 1024) (4266,)
+Subset1_Train_47.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(17784, 1024) (17784,)
+Subset1_Train_59.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2ee6ad0>
+load
+model_inputed
+(5431, 1024) (5431,)
+Subset1_Train_63.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b8460>
+load
+model_inputed
+(3653, 1024) (3653,)
+Subset1_Train_64.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2219b70>
+load
+model_inputed
+(3457, 1024) (3457,)
+Subset1_Train_68.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4364580>
+load
+model_inputed
+(6622, 1024) (6622,)
+wandb: Currently logged in as: yzhao155 (gleason_grading). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.11 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.10
+wandb: Run data is saved locally in /home/yzhao155/Gleason_grading/neural_network_training/wandb/run-20230310_225540-eqiy7b6a
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run preliminary-only-classifier-2-balanced_normalized
+wandb: ⭐️ View project at https://wandb.ai/gleason_grading/gleason-grading-subset1
+wandb: 🚀 View run at https://wandb.ai/gleason_grading/gleason-grading-subset1/runs/eqiy7b6a
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.017 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.017 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb: accuracy_train ▁▃▄▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇██████████████
+wandb:   accuracy_val ▂▂▄▅▅▆▇▆▇▇▄█▅▄▄▄▆▇▇▇▇▅▆▅█▅▆▄█▄▇▅▃▄▆▃▁▅▆▄
+wandb:     loss_train █▆▅▄▄▄▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:       loss_val ▅▅▃▃▃▂▁▂▂▂▅▁▃▅▅▅▄▃▄▄▃▅▅▄▅▅▅▇▃▇▄▆▇▇▅▇█▇▆▅
+wandb: 
+wandb: Run summary:
+wandb: accuracy_train 0.67777
+wandb:   accuracy_val 0.54134
+wandb:     loss_train 0.81625
+wandb:       loss_val 1.15197
+wandb: 
+wandb: 🚀 View run preliminary-only-classifier-2-balanced_normalized at: https://wandb.ai/gleason_grading/gleason-grading-subset1/runs/eqiy7b6a
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230310_225540-eqiy7b6a/logs
+new_directory
+0     Subset1_Train_76.tiff
+1     Subset1_Train_69.tiff
+2     Subset1_Train_74.tiff
+3     Subset1_Train_44.tiff
+4     Subset1_Train_66.tiff
+              ...          
+63     Subset1_Train_4.tiff
+64    Subset1_Train_77.tiff
+65    Subset1_Train_86.tiff
+66    Subset1_Train_87.tiff
+67    Subset1_Train_78.tiff
+Name: img, Length: 68, dtype: object 68    Subset1_Train_57.tiff
+69    Subset1_Train_97.tiff
+70    Subset1_Train_99.tiff
+71    Subset1_Train_72.tiff
+72    Subset1_Train_63.tiff
+73    Subset1_Train_98.tiff
+74    Subset1_Train_27.tiff
+75     Subset1_Train_8.tiff
+76    Subset1_Train_24.tiff
+77    Subset1_Train_50.tiff
+78    Subset1_Train_79.tiff
+79    Subset1_Train_38.tiff
+80    Subset1_Train_93.tiff
+81    Subset1_Train_21.tiff
+82    Subset1_Train_58.tiff
+83    Subset1_Train_94.tiff
+84    Subset1_Train_36.tiff
+85    Subset1_Train_47.tiff
+Name: img, dtype: object
+515835
+181749 515835
+model_inputed
+DataParallel(
+  (module): Model_name(
+    (classifier): Sequential(
+      (fc1): Linear(in_features=1024, out_features=512, bias=True)
+      (relu): ReLU()
+      (fc2): Linear(in_features=512, out_features=5, bias=True)
+    )
+  )
+)
+tensor([0.8304, 0.8375, 0.7693, 0.6194, 0.9434], device='cuda:0')
+running epoch 0
+epoch 0, training loss = 1.215, validation loss = 1.140, training accuracy = 0.506, validation accuracy = 0.514
+running epoch 1
+epoch 1, training loss = 1.120, validation loss = 1.107, training accuracy = 0.549, validation accuracy = 0.539
+running epoch 2
+epoch 2, training loss = 1.083, validation loss = 1.147, training accuracy = 0.566, validation accuracy = 0.517
+running epoch 3
+epoch 3, training loss = 1.061, validation loss = 1.033, training accuracy = 0.576, validation accuracy = 0.579
+running epoch 4
+epoch 4, training loss = 1.043, validation loss = 1.122, training accuracy = 0.584, validation accuracy = 0.528
+running epoch 5
+epoch 5, training loss = 1.029, validation loss = 1.085, training accuracy = 0.590, validation accuracy = 0.544
+running epoch 6
+epoch 6, training loss = 1.018, validation loss = 1.082, training accuracy = 0.595, validation accuracy = 0.569
+running epoch 7
+epoch 7, training loss = 1.007, validation loss = 1.104, training accuracy = 0.600, validation accuracy = 0.554
+running epoch 8
+epoch 8, training loss = 0.998, validation loss = 1.109, training accuracy = 0.604, validation accuracy = 0.534
+running epoch 9
+epoch 9, training loss = 0.990, validation loss = 1.034, training accuracy = 0.607, validation accuracy = 0.607
+running epoch 10
+epoch 10, training loss = 0.983, validation loss = 1.105, training accuracy = 0.609, validation accuracy = 0.551
+running epoch 11
+epoch 11, training loss = 0.976, validation loss = 1.137, training accuracy = 0.613, validation accuracy = 0.522
+running epoch 12
+epoch 12, training loss = 0.970, validation loss = 1.072, training accuracy = 0.615, validation accuracy = 0.561
+running epoch 13
+epoch 13, training loss = 0.964, validation loss = 1.128, training accuracy = 0.618, validation accuracy = 0.533
+running epoch 14
+epoch 14, training loss = 0.959, validation loss = 1.105, training accuracy = 0.620, validation accuracy = 0.533
+running epoch 15
+epoch 15, training loss = 0.954, validation loss = 1.040, training accuracy = 0.622, validation accuracy = 0.582
+running epoch 16
+epoch 16, training loss = 0.950, validation loss = 1.071, training accuracy = 0.624, validation accuracy = 0.576
+running epoch 17
+epoch 17, training loss = 0.945, validation loss = 1.074, training accuracy = 0.625, validation accuracy = 0.568
+running epoch 18
+epoch 18, training loss = 0.940, validation loss = 1.084, training accuracy = 0.627, validation accuracy = 0.572
+running epoch 19
+epoch 19, training loss = 0.937, validation loss = 1.093, training accuracy = 0.628, validation accuracy = 0.563
+running epoch 20
+epoch 20, training loss = 0.933, validation loss = 1.077, training accuracy = 0.630, validation accuracy = 0.574
+running epoch 21
+epoch 21, training loss = 0.930, validation loss = 1.072, training accuracy = 0.631, validation accuracy = 0.579
+running epoch 22
+epoch 22, training loss = 0.927, validation loss = 1.080, training accuracy = 0.633, validation accuracy = 0.575
+running epoch 23
+epoch 23, training loss = 0.923, validation loss = 1.092, training accuracy = 0.634, validation accuracy = 0.557
+running epoch 24
+epoch 24, training loss = 0.920, validation loss = 1.092, training accuracy = 0.635, validation accuracy = 0.568
+running epoch 25
+epoch 25, training loss = 0.918, validation loss = 1.145, training accuracy = 0.637, validation accuracy = 0.539
+running epoch 26
+epoch 26, training loss = 0.915, validation loss = 1.142, training accuracy = 0.637, validation accuracy = 0.534
+running epoch 27
+epoch 27, training loss = 0.912, validation loss = 1.041, training accuracy = 0.638, validation accuracy = 0.589
+running epoch 28
+epoch 28, training loss = 0.909, validation loss = 1.104, training accuracy = 0.640, validation accuracy = 0.572
+running epoch 29
+epoch 29, training loss = 0.906, validation loss = 1.150, training accuracy = 0.641, validation accuracy = 0.534
+running epoch 30
+epoch 30, training loss = 0.904, validation loss = 1.096, training accuracy = 0.642, validation accuracy = 0.553
+running epoch 31
+epoch 31, training loss = 0.901, validation loss = 1.128, training accuracy = 0.642, validation accuracy = 0.559
+running epoch 32
+epoch 32, training loss = 0.899, validation loss = 1.093, training accuracy = 0.644, validation accuracy = 0.568
+running epoch 33
+epoch 33, training loss = 0.897, validation loss = 1.141, training accuracy = 0.645, validation accuracy = 0.540
+running epoch 34
+epoch 34, training loss = 0.895, validation loss = 1.156, training accuracy = 0.646, validation accuracy = 0.533
+running epoch 35
+epoch 35, training loss = 0.891, validation loss = 1.145, training accuracy = 0.647, validation accuracy = 0.542
+running epoch 36
+epoch 36, training loss = 0.890, validation loss = 1.146, training accuracy = 0.647, validation accuracy = 0.537
+running epoch 37
+epoch 37, training loss = 0.888, validation loss = 1.144, training accuracy = 0.648, validation accuracy = 0.570
+running epoch 38
+epoch 38, training loss = 0.886, validation loss = 1.160, training accuracy = 0.650, validation accuracy = 0.541
+running epoch 39
+epoch 39, training loss = 0.884, validation loss = 1.290, training accuracy = 0.650, validation accuracy = 0.475
+running epoch 40
+epoch 40, training loss = 0.883, validation loss = 1.113, training accuracy = 0.651, validation accuracy = 0.568
+running epoch 41
+epoch 41, training loss = 0.880, validation loss = 1.257, training accuracy = 0.651, validation accuracy = 0.513
+running epoch 42
+epoch 42, training loss = 0.878, validation loss = 1.159, training accuracy = 0.652, validation accuracy = 0.536
+running epoch 43
+epoch 43, training loss = 0.876, validation loss = 1.105, training accuracy = 0.653, validation accuracy = 0.574
+running epoch 44
+epoch 44, training loss = 0.875, validation loss = 1.124, training accuracy = 0.654, validation accuracy = 0.566
+running epoch 45
+epoch 45, training loss = 0.873, validation loss = 1.108, training accuracy = 0.654, validation accuracy = 0.576
+running epoch 46
+epoch 46, training loss = 0.872, validation loss = 1.185, training accuracy = 0.654, validation accuracy = 0.519
+running epoch 47
+epoch 47, training loss = 0.869, validation loss = 1.161, training accuracy = 0.656, validation accuracy = 0.545
+running epoch 48
+epoch 48, training loss = 0.869, validation loss = 1.111, training accuracy = 0.656, validation accuracy = 0.573
+running epoch 49
+epoch 49, training loss = 0.867, validation loss = 1.085, training accuracy = 0.657, validation accuracy = 0.578
+running epoch 50
+epoch 50, training loss = 0.866, validation loss = 1.100, training accuracy = 0.657, validation accuracy = 0.575
+running epoch 51
+epoch 51, training loss = 0.864, validation loss = 1.122, training accuracy = 0.658, validation accuracy = 0.570
+running epoch 52
+epoch 52, training loss = 0.862, validation loss = 1.140, training accuracy = 0.659, validation accuracy = 0.549
+running epoch 53
+epoch 53, training loss = 0.861, validation loss = 1.148, training accuracy = 0.659, validation accuracy = 0.555
+running epoch 54
+epoch 54, training loss = 0.860, validation loss = 1.137, training accuracy = 0.660, validation accuracy = 0.555
+running epoch 55
+epoch 55, training loss = 0.859, validation loss = 1.142, training accuracy = 0.660, validation accuracy = 0.567
+running epoch 56
+epoch 56, training loss = 0.857, validation loss = 1.119, training accuracy = 0.660, validation accuracy = 0.568
+running epoch 57
+epoch 57, training loss = 0.855, validation loss = 1.125, training accuracy = 0.662, validation accuracy = 0.579
+running epoch 58
+epoch 58, training loss = 0.854, validation loss = 1.124, training accuracy = 0.662, validation accuracy = 0.557
+running epoch 59
+epoch 59, training loss = 0.853, validation loss = 1.147, training accuracy = 0.663, validation accuracy = 0.540
+running epoch 60
+epoch 60, training loss = 0.852, validation loss = 1.137, training accuracy = 0.663, validation accuracy = 0.583
+running epoch 61
+epoch 61, training loss = 0.850, validation loss = 1.133, training accuracy = 0.664, validation accuracy = 0.561
+running epoch 62
+epoch 62, training loss = 0.850, validation loss = 1.138, training accuracy = 0.663, validation accuracy = 0.552
+running epoch 63
+epoch 63, training loss = 0.848, validation loss = 1.144, training accuracy = 0.665, validation accuracy = 0.554
+running epoch 64
+epoch 64, training loss = 0.847, validation loss = 1.109, training accuracy = 0.665, validation accuracy = 0.571
+running epoch 65
+epoch 65, training loss = 0.846, validation loss = 1.135, training accuracy = 0.666, validation accuracy = 0.545
+running epoch 66
+epoch 66, training loss = 0.845, validation loss = 1.154, training accuracy = 0.666, validation accuracy = 0.567
+running epoch 67
+epoch 67, training loss = 0.844, validation loss = 1.208, training accuracy = 0.666, validation accuracy = 0.529
+running epoch 68
+epoch 68, training loss = 0.843, validation loss = 1.212, training accuracy = 0.667, validation accuracy = 0.540
+running epoch 69
+epoch 69, training loss = 0.842, validation loss = 1.152, training accuracy = 0.667, validation accuracy = 0.564
+running epoch 70
+epoch 70, training loss = 0.841, validation loss = 1.183, training accuracy = 0.667, validation accuracy = 0.531
+running epoch 71
+epoch 71, training loss = 0.840, validation loss = 1.093, training accuracy = 0.667, validation accuracy = 0.589
+running epoch 72
+epoch 72, training loss = 0.838, validation loss = 1.165, training accuracy = 0.669, validation accuracy = 0.547
+running epoch 73
+epoch 73, training loss = 0.838, validation loss = 1.209, training accuracy = 0.669, validation accuracy = 0.547
+running epoch 74
+epoch 74, training loss = 0.837, validation loss = 1.191, training accuracy = 0.670, validation accuracy = 0.535
+running epoch 75
+epoch 75, training loss = 0.836, validation loss = 1.201, training accuracy = 0.669, validation accuracy = 0.544
+running epoch 76
+epoch 76, training loss = 0.835, validation loss = 1.124, training accuracy = 0.670, validation accuracy = 0.573
+running epoch 77
+epoch 77, training loss = 0.834, validation loss = 1.182, training accuracy = 0.671, validation accuracy = 0.544
+running epoch 78
+epoch 78, training loss = 0.833, validation loss = 1.175, training accuracy = 0.671, validation accuracy = 0.559
+running epoch 79
+epoch 79, training loss = 0.832, validation loss = 1.162, training accuracy = 0.672, validation accuracy = 0.564
+running epoch 80
+epoch 80, training loss = 0.831, validation loss = 1.130, training accuracy = 0.672, validation accuracy = 0.553
+running epoch 81
+epoch 81, training loss = 0.830, validation loss = 1.203, training accuracy = 0.672, validation accuracy = 0.530
+running epoch 82
+epoch 82, training loss = 0.830, validation loss = 1.165, training accuracy = 0.672, validation accuracy = 0.555
+running epoch 83
+epoch 83, training loss = 0.829, validation loss = 1.201, training accuracy = 0.673, validation accuracy = 0.537
+running epoch 84
+epoch 84, training loss = 0.828, validation loss = 1.139, training accuracy = 0.673, validation accuracy = 0.552
+running epoch 85
+epoch 85, training loss = 0.827, validation loss = 1.138, training accuracy = 0.673, validation accuracy = 0.556
+running epoch 86
+epoch 86, training loss = 0.826, validation loss = 1.141, training accuracy = 0.674, validation accuracy = 0.567
+running epoch 87
+epoch 87, training loss = 0.827, validation loss = 1.248, training accuracy = 0.674, validation accuracy = 0.528
+running epoch 88
+epoch 88, training loss = 0.825, validation loss = 1.208, training accuracy = 0.674, validation accuracy = 0.536
+running epoch 89
+epoch 89, training loss = 0.824, validation loss = 1.193, training accuracy = 0.674, validation accuracy = 0.541
+running epoch 90
+epoch 90, training loss = 0.822, validation loss = 1.168, training accuracy = 0.675, validation accuracy = 0.536
+running epoch 91
+epoch 91, training loss = 0.822, validation loss = 1.231, training accuracy = 0.675, validation accuracy = 0.508
+running epoch 92
+epoch 92, training loss = 0.822, validation loss = 1.152, training accuracy = 0.675, validation accuracy = 0.574
+running epoch 93
+epoch 93, training loss = 0.821, validation loss = 1.196, training accuracy = 0.676, validation accuracy = 0.553
+running epoch 94
+epoch 94, training loss = 0.819, validation loss = 1.190, training accuracy = 0.677, validation accuracy = 0.552
+running epoch 95
+epoch 95, training loss = 0.819, validation loss = 1.153, training accuracy = 0.677, validation accuracy = 0.574
+running epoch 96
+epoch 96, training loss = 0.819, validation loss = 1.165, training accuracy = 0.676, validation accuracy = 0.567
+running epoch 97
+epoch 97, training loss = 0.817, validation loss = 1.200, training accuracy = 0.677, validation accuracy = 0.542
+running epoch 98
+epoch 98, training loss = 0.817, validation loss = 1.183, training accuracy = 0.677, validation accuracy = 0.559
+running epoch 99
+epoch 99, training loss = 0.816, validation loss = 1.152, training accuracy = 0.678, validation accuracy = 0.541
+Finished Training
+Traceback (most recent call last):
+  File "/home/yzhao155/Gleason_grading/neural_network_training/train_classifier.py", line 224, in <module>
+    Loss_val = np.array(Loss_val)
+  File "/home/yzhao155/.conda/envs/openslide/lib/python3.10/site-packages/torch/_tensor.py", line 956, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.
+Traceback (most recent call last):
+  File "/home/yzhao155/Gleason_grading/neural_network_training/run_pretrain.py", line 53, in <module>
+    transforms.RandomAffine(scales=0.1,degrees=5,translation=(0,10,10))
+TypeError: RandomAffine.__init__() got an unexpected keyword argument 'scales'
+Traceback (most recent call last):
+  File "/home/yzhao155/Gleason_grading/neural_network_training/run_pretrain.py", line 53, in <module>
+    transforms.RandomAffine(scale=(.0, 0.5),degrees=5,translation=(0,10))
+TypeError: RandomAffine.__init__() got an unexpected keyword argument 'translation'
+Traceback (most recent call last):
+  File "/home/yzhao155/Gleason_grading/neural_network_training/run_pretrain.py", line 53, in <module>
+    transforms.RandomAffine(scale=(.0, 0.5),degrees=5,translate=(0,10))
+  File "/home/yzhao155/.conda/envs/openslide/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 1430, in __init__
+    raise ValueError("translation values should be between 0 and 1")
+ValueError: translation values should be between 0 and 1
+Traceback (most recent call last):
+  File "/home/yzhao155/Gleason_grading/neural_network_training/run_pretrain.py", line 53, in <module>
+    transforms.RandomAffine(scale=(.0, 0.5),degrees=5,translate=(0,0.5))
+  File "/home/yzhao155/.conda/envs/openslide/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 1437, in __init__
+    raise ValueError("scale values should be positive")
+ValueError: scale values should be positive
+0     Subset1_Train_30.tiff
+1     Subset1_Train_28.tiff
+2     Subset1_Train_75.tiff
+3     Subset1_Train_94.tiff
+4     Subset1_Train_98.tiff
+              ...          
+81    Subset1_Train_47.tiff
+82    Subset1_Train_59.tiff
+83    Subset1_Train_63.tiff
+84    Subset1_Train_64.tiff
+85    Subset1_Train_68.tiff
+Name: img, Length: 86, dtype: object
+Subset1_Train_30.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea3222200>
+load
+model_inputed
+(6560, 1024) (6560,)
+Subset1_Train_28.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f73fa0>
+load
+model_inputed
+(9535, 1024) (9535,)
+Subset1_Train_75.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f19ba0>
+load
+model_inputed
+(2102, 1024) (2102,)
+Subset1_Train_94.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f334f0>
+load
+model_inputed
+(7781, 1024) (7781,)
+Subset1_Train_98.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(15488, 1024) (15488,)
+Subset1_Train_55.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea3222710>
+load
+model_inputed
+(6034, 1024) (6034,)
+Subset1_Train_81.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f334f0>
+load
+model_inputed
+(21240, 1024) (21240,)
+Subset1_Train_5.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(4897, 1024) (4897,)
+Subset1_Train_20.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f003d0>
+load
+model_inputed
+(6633, 1024) (6633,)
+Subset1_Train_40.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f334f0>
+load
+model_inputed
+(4925, 1024) (4925,)
+Subset1_Train_33.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(3946, 1024) (3946,)
+Subset1_Train_24.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32226e0>
+load
+model_inputed
+(28414, 1024) (28414,)
+Subset1_Train_56.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2ed5f60>
+load
+model_inputed
+(3005, 1024) (3005,)
+Subset1_Train_79.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(6715, 1024) (6715,)
+Subset1_Train_36.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(4917, 1024) (4917,)
+Subset1_Train_6.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea3222320>
+load
+model_inputed
+(9530, 1024) (9530,)
+Subset1_Train_51.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32ac370>
+load
+model_inputed
+(4594, 1024) (4594,)
+Subset1_Train_38.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(8126, 1024) (8126,)
+Subset1_Train_90.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(6744, 1024) (6744,)
+Subset1_Train_49.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(7439, 1024) (7439,)
+Subset1_Train_43.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(2911, 1024) (2911,)
+Subset1_Train_85.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(8163, 1024) (8163,)
+Subset1_Train_70.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f19270>
+load
+model_inputed
+(10601, 1024) (10601,)
+Subset1_Train_80.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(7166, 1024) (7166,)
+Subset1_Train_52.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(16795, 1024) (16795,)
+Subset1_Train_87.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(7770, 1024) (7770,)
+Subset1_Train_60.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(4622, 1024) (4622,)
+Subset1_Train_99.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(25357, 1024) (25357,)
+Subset1_Train_93.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea329bf10>
+load
+model_inputed
+(9109, 1024) (9109,)
+Subset1_Train_97.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32c3f70>
+load
+model_inputed
+(5397, 1024) (5397,)
+Subset1_Train_44.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(5209, 1024) (5209,)
+Subset1_Train_21.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32c0a60>
+load
+model_inputed
+(2570, 1024) (2570,)
+Subset1_Train_46.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32ad720>
+load
+model_inputed
+(7816, 1024) (7816,)
+Subset1_Train_88.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(14678, 1024) (14678,)
+Subset1_Train_54.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(4882, 1024) (4882,)
+Subset1_Train_58.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(7677, 1024) (7677,)
+Subset1_Train_25.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(2802, 1024) (2802,)
+Subset1_Train_9.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(4523, 1024) (4523,)
+Subset1_Train_23.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(2510, 1024) (2510,)
+Subset1_Train_74.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f18df0>
+load
+model_inputed
+(17801, 1024) (17801,)
+Subset1_Train_42.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(11819, 1024) (11819,)
+Subset1_Train_32.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(5767, 1024) (5767,)
+Subset1_Train_31.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f18df0>
+load
+model_inputed
+(11364, 1024) (11364,)
+Subset1_Train_73.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(8814, 1024) (8814,)
+Subset1_Train_22.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(4862, 1024) (4862,)
+Subset1_Train_83.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32d4250>
+load
+model_inputed
+(9544, 1024) (9544,)
+Subset1_Train_29.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea329b8e0>
+load
+model_inputed
+(13110, 1024) (13110,)
+Subset1_Train_41.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32afb20>
+load
+model_inputed
+(5568, 1024) (5568,)
+Subset1_Train_92.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(5301, 1024) (5301,)
+Subset1_Train_66.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(8061, 1024) (8061,)
+Subset1_Train_65.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32afb20>
+load
+model_inputed
+(5562, 1024) (5562,)
+Subset1_Train_62.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(3902, 1024) (3902,)
+Subset1_Train_71.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(2355, 1024) (2355,)
+Subset1_Train_86.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea266ff10>
+load
+model_inputed
+(4392, 1024) (4392,)
+Subset1_Train_27.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea25fbf70>
+load
+model_inputed
+(2802, 1024) (2802,)
+Subset1_Train_48.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(3359, 1024) (3359,)
+Subset1_Train_26.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(18477, 1024) (18477,)
+Subset1_Train_4.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(32325, 1024) (32325,)
+Subset1_Train_69.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(28462, 1024) (28462,)
+Subset1_Train_67.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(1991, 1024) (1991,)
+Subset1_Train_53.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(1732, 1024) (1732,)
+Subset1_Train_91.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(3835, 1024) (3835,)
+Subset1_Train_76.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2ebce20>
+load
+model_inputed
+(4431, 1024) (4431,)
+Subset1_Train_45.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea259fc70>
+load
+model_inputed
+(4324, 1024) (4324,)
+Subset1_Train_57.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(18714, 1024) (18714,)
+Subset1_Train_37.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(6318, 1024) (6318,)
+Subset1_Train_39.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2617fa0>
+load
+model_inputed
+(7707, 1024) (7707,)
+Subset1_Train_82.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea32ae380>
+load
+model_inputed
+(14923, 1024) (14923,)
+Subset1_Train_89.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(8987, 1024) (8987,)
+Subset1_Train_50.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2663f10>
+load
+model_inputed
+(1537, 1024) (1537,)
+Subset1_Train_34.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(5061, 1024) (5061,)
+Subset1_Train_3.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(2915, 1024) (2915,)
+Subset1_Train_78.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(11121, 1024) (11121,)
+Subset1_Train_35.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(3969, 1024) (3969,)
+Subset1_Train_2.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb22c9060>
+load
+model_inputed
+(6787, 1024) (6787,)
+Subset1_Train_8.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2f49000>
+load
+model_inputed
+(10497, 1024) (10497,)
+Subset1_Train_72.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb2211d50>
+load
+model_inputed
+(5211, 1024) (5211,)
+Subset1_Train_61.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2edff70>
+load
+model_inputed
+(5763, 1024) (5763,)
+Subset1_Train_84.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2edbf70>
+load
+model_inputed
+(4866, 1024) (4866,)
+Subset1_Train_7.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(2852, 1024) (2852,)
+Subset1_Train_77.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea39b4640>
+load
+model_inputed
+(4266, 1024) (4266,)
+Subset1_Train_47.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea2ebd300>
+load
+model_inputed
+(17784, 1024) (17784,)
+Subset1_Train_59.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffff6e87f70>
+load
+model_inputed
+(5431, 1024) (5431,)
+Subset1_Train_63.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffeb4360760>
+load
+model_inputed
+(3653, 1024) (3653,)
+Subset1_Train_64.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea4151420>
+load
+model_inputed
+(3457, 1024) (3457,)
+Subset1_Train_68.tiff
+<Dataset.dataset2.Dataset_name object at 0x7ffea25d3f70>
+load
+model_inputed
+(6622, 1024) (6622,)

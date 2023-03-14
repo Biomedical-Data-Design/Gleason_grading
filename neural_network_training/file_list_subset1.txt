@@ -58,7 +58,6 @@ Subset1_Train_48,Subset1_Train_48.tiff,Subset1_Train_48
 Subset1_Train_26,Subset1_Train_26.tiff,Subset1_Train_26
 Subset1_Train_4,Subset1_Train_4.tiff,Subset1_Train_4
 Subset1_Train_69,Subset1_Train_69.tiff,Subset1_Train_69
-Subset1_Train_95,Subset1_Train_95.tiff,Subset1_Train_95
 Subset1_Train_67,Subset1_Train_67.tiff,Subset1_Train_67
 Subset1_Train_53,Subset1_Train_53.tiff,Subset1_Train_53
 Subset1_Train_91,Subset1_Train_91.tiff,Subset1_Train_91
