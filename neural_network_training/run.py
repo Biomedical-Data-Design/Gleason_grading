@@ -115,7 +115,7 @@ pretrained_model = build_model(arch="densenet121", pretrained="mtdp", pool= True
 model = Model_name(feature_encoder = pretrained_model)
 #print(model)
 ### utilize GPU
-model = torch.nn.DataParallel(model,device_ids = [0, 1, 2,3])
+#model = torch.nn.DataParallel(model,device_ids = [0, 1, 2,3])
 model = model.to(device)
 
 param_update = []
