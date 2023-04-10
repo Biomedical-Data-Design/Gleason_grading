@@ -11,6 +11,7 @@ class Model_name(nn.Module):
         self.classifier = nn.Sequential(OrderedDict([
             ('fc1',nn.Linear(1024, 512)),
             ('relu',nn.ReLU()),
+            ('dropout',nn.Dropout(p=0.5)),
             ('fc2',nn.Linear(512, 5))
             #('output',nn.Softmax(dim=1))     
         ]))
