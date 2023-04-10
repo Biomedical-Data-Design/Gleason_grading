@@ -1,4 +1,0 @@
-criterion:CrossEntropyLosstensor([0.8304, 0.8375, 0.7693, 0.6194, 0.9434], device='cuda:0')
-optimizer:SGDlr=1e-4, momentum=0.9, weight_decay = 1e-4 
-epoch: 100 
-train: 515835 val: 181749

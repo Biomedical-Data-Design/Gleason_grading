@@ -39,26 +39,40 @@ from torchmetrics import Accuracy
 import openslide
 import random
 import pandas as pd
+import pickle
 import wandb
 
 
 #################### output
-out_dir = "./result/subset1_pretrain_100epoch_balanced_augment_imagenet/"
-isExist = os.path.exists("./result/subset1_pretrain_100epoch_balanced_augment_imagenet/checkpoint")
+out_dir = "/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/"
+isExist = os.path.exists("/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
 if not isExist:
     print("new_directory")
-    os.makedirs("./result/subset1_pretrain_100epoch_balanced_augment_imagenet/checkpoint")
+    os.makedirs("/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
 
 #################### input 
-file = pd.read_csv("./file_list_subset1.txt")
-file_list = file["img"]
+file = pd.read_csv("/data/acharl15/gleason_grading/file_list_all.csv")
+file = file.dropna()
+file_list = []
+for i in file["img"]:
+    # if i.startswith("Subset2"):
+    #     file_list.append(i)
+    file_list.append(i)
+file_list
 random.seed(42)
 random.shuffle(file_list)
 
 train_path_len = int(len(file_list)*0.8)
-
 train_path = file_list[0:train_path_len]
 val_path = file_list[train_path_len:len(file_list)]
+
+train_val = []
+train_val.append(train_path)
+train_val.append(val_path)
+# save train val split
+print('\nSaving the object')
+with open(str(out_dir+"train_val_split.pck"), "wb") as output_file:
+    pickle.dump(train_val, output_file)
 
 print(train_path,val_path)
 
@@ -68,8 +82,14 @@ train_dataset = []
 label_list = []
 n = 0
 for i in train_path:
-    feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i.split('.tiff')[0]+"/augment_feature.npy"))
-    label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i.split('.tiff')[0]+"/augment_class.npy"))
+    aug1_feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/augment2_feature.npy"))
+    aug1_label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/augment2_class.npy"))
+    aug2_feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/augment3_feature.npy"))
+    aug2_label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/augment3_class.npy"))
+    origin_feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/feature.npy"))
+    origin_label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/class.npy"))
+    feature = np.vstack((aug1_feature,aug2_feature,origin_feature))
+    label = np.hstack((aug1_label,aug2_label,origin_label))
     #print(feature.shape,label.shape)
     tmp_path = Dataset_name(feature,label)
     for j in label:
@@ -80,14 +100,14 @@ for i in train_path:
 
 val_dataset = []
 for i in val_path:
-    feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i.split('.tiff')[0]+"/feature.npy"))
-    label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i.split('.tiff')[0]+"/class.npy"))
+    feature = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/feature.npy"))
+    label = np.load(str("/home/yzhao155/data-acharl15/gleason_grading/pretrain/"+i+"/class.npy"))
     #print(feature.shape,label.shape)
     tmp_path = Dataset_name(feature,label)
     #print(i,len(tmp_path))
     val_dataset = torch.utils.data.ConcatDataset([val_dataset,tmp_path])
 
-print(n)
+
 print(len(val_dataset),len(train_dataset))
 train_loader = data_utils.DataLoader(train_dataset, batch_size=32, shuffle=True)
 val_loader = data_utils.DataLoader(val_dataset, batch_size=32, shuffle=True)
@@ -99,7 +119,7 @@ val_loader = data_utils.DataLoader(val_dataset, batch_size=32, shuffle=True)
 
 wandb.init(
     # set the wandb project where this run will be logged
-    project="gleason-grading-subset1",name = 'preliminary-only-classifier-2-balanced_augment_imagenet',
+    project="gleason-grading-subset1",name = 'Experiment 12',
     
     # track hyperparameters and run metadata
     config={
@@ -115,7 +135,7 @@ wandb.init(
 # define a device which allows you to use GPU resources
 device = torch.device("cuda")
 # define your model
-model = tanh()
+model = Model_name()
 ### utilize GPU
 model = model.to(device)
 model = torch.nn.DataParallel(model,device_ids = [0, 1])
@@ -130,7 +150,7 @@ class3 = 1-len(label_list[label_list== 2])/n
 class4 = 1-len(label_list[label_list== 3])/n
 class5 = 1-len(label_list[label_list== 4])/n
 class_weight = torch.FloatTensor([class1,class2,class3,class4,class5]).to(device)
-print(class_weight)
+print("class weight",class_weight)
 criterion = nn.CrossEntropyLoss(weight = class_weight) # this is the loss function. Cross entropy loss is the most commonly used loss function for classification task
 optimizer = optim.SGD(model.parameters(), lr=1e-4, momentum=0.9, weight_decay = 1e-4) # you could also use Adam optimizer if you want
 # output parameter
@@ -220,29 +240,29 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 wandb.finish()
 print('Finished Training')
 
-############################ output
-Loss_train = np.array(Loss_train)
-Loss_val = np.array(Loss_val)
-Accuracy_train = np.array(Accuracy_train)
-Accuracy_val = np.array(Accuracy_val)
-np.savetxt(str(out_dir+'Loss_train.txt'), Loss_train, delimiter='\t',fmt='%s')
-np.savetxt(str(out_dir+'Loss_val.txt'), Loss_val, delimiter='\t',fmt='%s')
-np.savetxt(str(out_dir+'Accuracy_train.txt'), Accuracy_train, delimiter='\t',fmt='%s')
-np.savetxt(str(out_dir+'Accuracy_val.txt'), Accuracy_val, delimiter='\t',fmt='%s')
-# plot loss
-plt.figure()
-plt.plot(list(range(num_epochs)),Loss_train,label="train")
-plt.plot(list(range(num_epochs)),Loss_val,label="validation")
-plt.xlabel("epoch")
-plt.ylabel("loss")
-plt.legend()
-plt.savefig(str(out_dir+'loss.pdf'))
+# ############################ output
+# Loss_train = np.array(Loss_train)
+# Loss_val = np.array(Loss_val)s
+# Accuracy_train = np.array(Accuracy_train)
+# Accuracy_val = np.array(Accuracy_val)
+# np.savetxt(str(out_dir+'Loss_train.txt'), Loss_train, delimiter='\t',fmt='%s')
+# np.savetxt(str(out_dir+'Loss_val.txt'), Loss_val, delimiter='\t',fmt='%s')
+# np.savetxt(str(out_dir+'Accuracy_train.txt'), Accuracy_train, delimiter='\t',fmt='%s')
+# np.savetxt(str(out_dir+'Accuracy_val.txt'), Accuracy_val, delimiter='\t',fmt='%s')
+# # plot loss
+# plt.figure()
+# plt.plot(list(range(num_epochs)),Loss_train,label="train")
+# plt.plot(list(range(num_epochs)),Loss_val,label="validation")
+# plt.xlabel("epoch")
+# plt.ylabel("loss")
+# plt.legend()
+# plt.savefig(str(out_dir+'loss.pdf'))
 
-# plot accuracy
-plt.figure()
-plt.plot(list(range(num_epochs)),Accuracy_train,label="train")
-plt.plot(list(range(num_epochs)),Accuracy_val,label="validation")
-plt.xlabel("epoch")
-plt.ylabel("Accuracy")
-plt.legend()
-plt.savefig(str(out_dir+"Accuracy.pdf"))
+# # plot accuracy
+# plt.figure()
+# plt.plot(list(range(num_epochs)),Accuracy_train,label="train")
+# plt.plot(list(range(num_epochs)),Accuracy_val,label="validation")
+# plt.xlabel("epoch")
+# plt.ylabel("Accuracy")
+# plt.legend()
+# plt.savefig(str(out_dir+"Accuracy.pdf"))
