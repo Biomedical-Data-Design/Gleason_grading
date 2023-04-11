@@ -33,15 +33,15 @@ class Dataset_name():
         self.ROW, self.COL = np.where((self.thresh>0)&(annotation_sum == 255))
         #print(len(self.ROW),len(self.COL))
 
-        #randomly select 20%
-        total_patch = np.array(range(len(self.ROW)))
-        np.random.shuffle(total_patch)
-        number = int(len(self.ROW)*0.2)
-        total_patch = total_patch[0:number]
-        #print(self.ROW[total_patch[0:2]])
-        self.ROW = self.ROW[total_patch.tolist()]
-        self.COL = self.COL[total_patch.tolist()]
-        #print(self.ROW[0:2])
+        # #randomly select 20%
+        # total_patch = np.array(range(len(self.ROW)))
+        # np.random.shuffle(total_patch)
+        # number = int(len(self.ROW)*0.2)
+        # total_patch = total_patch[0:number]s
+        # #print(self.ROW[total_patch[0:2]])
+        # self.ROW = self.ROW[total_patch.tolist()]
+        # self.COL = self.COL[total_patch.tolist()]
+        # #print(self.ROW[0:2])
 
 
 
@@ -67,4 +67,5 @@ class Dataset_name():
         y = label_vector.index(255)
         if self.transform is not None:
             x = self.transform(x)
-        return x, y
+        idx = [row,col]
+        return x, idx, y

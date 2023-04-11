@@ -70,7 +70,7 @@ for j in file_list:
     print("load")
     # define a device which allows you to use GPU resources
     device = torch.device("cuda")
-    model = build_model(arch="densenet121", pretrained="mtdp", pool=True)
+    
     #model = torch.nn.DataParallel(model,device_ids = [0, 1, 2,3])
     model = model.to(device)
     print("model_inputed")

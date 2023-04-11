@@ -21,5 +21,6 @@ class Model_name(nn.Module):
     # forward tells how the data x go through the model
     def forward(self, x):
         h = self.feature_encoder(x)
+        #print(h.shape)
         y = self.classifier(h.view(h.shape[0],h.shape[1]*h.shape[2]*h.shape[3]))
         return y

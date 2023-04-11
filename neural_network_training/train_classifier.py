@@ -44,20 +44,20 @@ import wandb
 
 
 #################### output
-out_dir = "/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/"
-isExist = os.path.exists("/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
+out_dir = "/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/"
+isExist = os.path.exists("/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/checkpoint")
 if not isExist:
     print("new_directory")
-    os.makedirs("/data/acharl15/gleason_grading/result/training_saved_model/All_subset_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
+    os.makedirs("/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/checkpoint")
 
 #################### input 
 file = pd.read_csv("/data/acharl15/gleason_grading/file_list_all.csv")
 file = file.dropna()
 file_list = []
 for i in file["img"]:
-    # if i.startswith("Subset2"):
-    #     file_list.append(i)
-    file_list.append(i)
+    if i.startswith("Subset1"):
+        file_list.append(i)
+    #file_list.append(i)
 file_list
 random.seed(42)
 random.shuffle(file_list)
@@ -119,7 +119,7 @@ val_loader = data_utils.DataLoader(val_dataset, batch_size=32, shuffle=True)
 
 wandb.init(
     # set the wandb project where this run will be logged
-    project="gleason-grading-subset1",name = 'Experiment 12',
+    project="gleason-grading-subset1",name = 'Experiment 13',
     
     # track hyperparameters and run metadata
     config={
