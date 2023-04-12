@@ -53,7 +53,7 @@ m = nn.Softmax(dim=1).to(device)
 out_dir = str("/home/yzhao155/data-acharl15/gleason_grading/test_folder/result/"+f+"/")
 isExist = os.path.exists(out_dir)
 if not isExist:
-    print("new_directory")
+    print("new_directory",out_dir)
     os.makedirs(out_dir)
 print(out_dir)
 transform = transforms.Compose([
@@ -65,10 +65,10 @@ transform = transforms.Compose([
 img = Dataset_name(str("/home/yzhao155/data-acharl15/gleason_grading/test_folder/patch/"+f+"/patch_mask.jpg"), 
                     str("/home/yzhao155/data-acharl15/gleason_grading/test_folder/patch/"+f+"/patch_mask_"),
                     str('/home/yzhao155/data-acharl15/gleason_grading/test_folder/'+f+".tiff"),transform = transform)
-print(img)
+#print(img)
 train_loader = data_utils.DataLoader(img, batch_size=32, shuffle=False)
 
-print("load")
+print("load img")
 
 with torch.no_grad():
     model.eval()
@@ -110,6 +110,7 @@ with open(str(out_dir+"result.pck"), "wb") as output_file:
 # heatmap H*W*5
 H = np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1,5))
 G = np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
+G_pred =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
 print(H.shape)
 for i in range(len(label)):
     x = index_list_x[i]
@@ -122,14 +123,17 @@ for i in range(len(label)):
     H[x,y,3] = yprob[i][3]
     H[x,y,4] = yprob[i][4]
 
+    #Gpred
+    G_pred[x,y] = np.argmax(yprob[i])+1
+
     #Ground truth
     #print(i,x,y)
     G[x,y] = label[i]+1
-    print(np.argmax(yprob[i]),label[i])
+    #print(np.argmax(yprob[i]),label[i])
 
-G_pred = np.argmax(H, axis = -1) + 1
-print(G_pred)
-print(G)
+#G_pred = np.argmax(H, axis = -1) + 1
+#print(G_pred)
+#print(G)
 print("max",np.max(G_pred))
 
 #create black and white classification masks
@@ -139,13 +143,14 @@ np.save(str(out_dir+"H"), H)
 
 #G = cv2.convertScaleAbs(G, alpha=(255.0))
 #cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
-G = ((G - G.min()) * (1/(G.max() - G.min()) * 255)).astype('uint8')
+G = ((G - G.min()) * (1/(5 - G.min()) * 255)).astype('uint8')
 #G.save(str(out_dir+"Ground_truth.jpg"))
 cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
 np.save(str(out_dir+"G"), G)
 
 #G_pred = cv2.convertScaleAbs(G_pred, alpha=(255.0))
 #cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
-G_pred = ((G_pred - G_pred.min()) * (1/(G_pred.max() - G_pred.min()) * 255)).astype('uint8')
+G_pred = ((G_pred - G_pred.min()) * (1/(5 - G_pred.min()) * 255)).astype('uint8')
 cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
 np.save(str(out_dir+"G_pred"), G_pred)
+print("result output")
