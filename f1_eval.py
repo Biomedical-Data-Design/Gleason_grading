@@ -1,6 +1,6 @@
 #inputs: true and predicted labels for each subset
 #outputs:
-    #f1 score for each subet (s1_score, s2_score, s3_score),
+    #f1 score for each subset (s1_score, s2_score, s3_score),
     #weighted f1 score for each subset (weighted_s1, weighted_s2, weighted_s3)
     #total weighted f1 score (total_score)
 import numpy as np
