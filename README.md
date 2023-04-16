@@ -18,7 +18,7 @@ Additionally, for images that OpenCV is not suited to load in, there are two oth
  
 The directory names and appropriate library file locations must be updated within the `demo.py`.
 
-### 2. run the saved model and get annotated heatmap
+### 2. Run saved model:
 Inputs: Original slide image, pretrained_model_parameter,out_directory_path ,output_patch_folder
 Outputs: 
 1. G.npy  & Ground_truth.jpg :size of height x weight  (the pixel value is the class label) (0:empty background, 1:normal, etc)
