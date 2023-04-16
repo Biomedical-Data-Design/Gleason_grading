@@ -9,7 +9,7 @@ In order to run the model, we need to first process the image and feed the prepr
 The `demo.py` contrained the following 2 steps:
 ### 1. Preprocessing Step: 
 Inputs: Original slide image, annotation masks, output_patch_folder
-Outputs: Patch masks for the complete image and all 5 classes 
+\n Outputs: Patch masks for the complete image and all 5 classes 
 
 `preprocess_img.py` contains all preprocessing steps including 
 * Image segmentation into 256 x 256 patches using the Patchify library
