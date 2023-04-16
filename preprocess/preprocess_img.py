@@ -30,9 +30,9 @@ args = parser.parse_args()
 print(args.filename,args.annotation_dir,args.output_dir)
 
 #determines where images, annotations, and patch masks are saved
-image = os.path.join("/Users/anany/Desktop/gleason-grading/goodimg/"+ args.filename)
-ann_dir = os.path.join("/Users/anany/Desktop/gleason-grading/goodimg/"+args.filename[0:7]+"_Train_annotation/"+ args.annotation_dir+"/")
-output = os.path.join("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/")
+image = os.path.join("/data/acharl15/gleason_grading/test_folder/"+ args.filename)
+ann_dir = os.path.join("/data/acharl15/gleason_grading/test_folder/"+args.filename[0:7]+"_Test_annotation/"+ args.annotation_dir+"/")
+output = os.path.join("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/")
 
 print(image, ann_dir, output)
 
@@ -51,7 +51,7 @@ else:
 
 # transfer BGR format for image to gray format
 print(type(image))
-img = cv2.imread(str("/Users/anany/Desktop/gleason-grading/goodimg/"+ args.filename),1)
+img = cv2.imread(str("/data/acharl15/gleason_grading/test_folder/"+ args.filename),1)
 print(img.shape)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -128,8 +128,8 @@ for i in range(5):
     patch_mask_annotation[i]= cv2.convertScaleAbs(patch_mask_annotation[i], alpha=(255.0))
 
 #save each of the classifications for the patches
-cv2.imwrite(str("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/patch_mask_Normal.jpg"), patch_mask_annotation[0])
-cv2.imwrite(str("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/patch_mask_Stroma.jpg"), patch_mask_annotation[1])
-cv2.imwrite(str("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/patch_mask_G3.jpg"), patch_mask_annotation[2])
-cv2.imwrite(str("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/patch_mask_G4.jpg"), patch_mask_annotation[3])
-cv2.imwrite(str("/Users/anany/Desktop/gleason-grading/patch/"+args.output_dir+"/patch_mask_G5.jpg"), patch_mask_annotation[4])
+cv2.imwrite(str("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/patch_mask_Normal.jpg"), patch_mask_annotation[0])
+cv2.imwrite(str("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/patch_mask_Stroma.jpg"), patch_mask_annotation[1])
+cv2.imwrite(str("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/patch_mask_G3.jpg"), patch_mask_annotation[2])
+cv2.imwrite(str("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/patch_mask_G4.jpg"), patch_mask_annotation[3])
+cv2.imwrite(str("/data/acharl15/gleason_grading/test_folder/patch/"+args.output_dir+"/patch_mask_G5.jpg"), patch_mask_annotation[4])
