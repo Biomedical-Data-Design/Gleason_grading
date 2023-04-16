@@ -1,64 +1,50 @@
-#inputs: true and predicted labels for each subset
-#outputs:
-    #f1 score for each subset (s1_score, s2_score, s3_score),
-    #weighted f1 score for each subset (weighted_s1, weighted_s2, weighted_s3)
-    #total weighted f1 score (total_score)
+#function aggc_eval gives the weighted score for an individual subset
+#function total_score gives the total weighted score
+
+#inputs: true and predicted labels for a single subset
+#outputs: weighted f1 score
 import numpy as np
 
-def aggc_eval(s1_true, s1_pred, s2_true, s2_pred, s3_true, s3_pred):
+def aggc_eval(true, pred):
+    from sklearn.metrics import confusion_matrix
     from sklearn.metrics import f1_score
 
-    #calculate overall f1 score for each subset
-    s1_score=f1_score(s1_true, s1_pred, average="micro")
-    s2_score=f1_score(s2_true,s2_pred, average="micro")
-    s3_score=f1_score(s3_true,s3_pred, average="micro")
 
-    # slice by grade --------------------------------
-    #subset 1
-    s1 = np.vstack((s1_true, s1_pred))
-
-    slice1_1 = s1[:, (s1_true == 1)]
-    slice2_1 = s1[:, (s1_true == 2)]
-    slice3_1 = s1[:, (s1_true == 3)]
-    slice4_1 = s1[:, (s1_true == 4)]
-    slice5_1 = s1[:, (s1_true == 5)]
-
-    #subset 2
-    s2 = np.vstack((s2_true, s2_pred))
-
-    slice1_2 = s2[:, (s2_true == 1)]
-    slice2_2 = s2[:, (s2_true == 2)]
-    slice3_2 = s2[:, (s2_true == 3)]
-    slice4_2 = s2[:, (s2_true == 4)]
-    slice5_2 = s2[:, (s2_true == 5)]
-
-    #subet 3
-    s3 = np.vstack((s3_true, s3_pred))
-
-    slice1_3 = s3[:, (s3_true == 1)]
-    slice2_3 = s3[:, (s3_true == 2)]
-    slice3_3 = s3[:, (s3_true == 3)]
-    slice4_3 = s3[:, (s3_true == 4)]
-    slice5_3 = s3[:, (s3_true == 5)]
-    #-----------------------------------------------
+    # calculate confusion matrix for each subset
+    conf_mat=np.zeros((6,6))
+    conf_mat[1:6,1:6] = confusion_matrix(true, pred)
 
 
-    #apply evaluation weightings as prescribed by aggc
+    # Weighted-average F1-score = 0.25 * F1-score_G3 + 0.25 * F1-score_G4 +0.25 * F1-score_G5 +0.125 * F1-score_Normal +0.125 * F1-score_Stroma, where:
+    #
+    # F1-score=2×Precision×Recall/(Precision+ Recall);Precision=TP/(TP+FP);Recall=TP/(TP+FN)
 
-    weighted_s1 = 0.25 * (f1_score(slice3_1[0, :], slice3_1[1, :], average="micro")) + 0.25 * (
-        f1_score(slice4_1[0, :], slice4_1[1, :], average="micro")) + 0.25 * (f1_score(slice5_1[0, :], slice5_1[1, :], average="micro")) + 0.125 * (
-                      f1_score(slice1_1[0, :], slice1_1[1, :], average="micro")) + 0.125 * (f1_score(slice2_1[0, :], slice2_1[1, :], average="micro"))
+    Stroma_Recall = conf_mat[1, 1] / np.sum(conf_mat[1, :])
+    Normal_Recall = conf_mat[2, 2] / np.sum(conf_mat[2, :])
+    G3_Recall = conf_mat[3, 3] / np.sum(conf_mat[3, :])
+    G4_Recall = conf_mat[4, 4] / np.sum(conf_mat[4, :])
+    G5_Recall = conf_mat[5, 5] / np.sum(conf_mat[5, :])
 
-    weighted_s2 = 0.25 * (f1_score(slice3_2[0, :], slice3_2[1, :], average="micro")) + 0.25 * (
-        f1_score(slice4_2[0, :], slice4_2[1, :], average="micro")) + 0.25 * (f1_score(slice5_2[0, :], slice5_2[1, :], average="micro")) + 0.125 * (
-                      f1_score(slice1_2[0, :], slice1_2[1, :], average="micro")) + 0.125 * (f1_score(slice2_2[0, :], slice2_2[1, :], average="micro"))
+    Stroma_Pre = conf_mat[1, 1] / (np.sum(conf_mat[:, 1]) - conf_mat[0, 1])
+    Normal_Pre = conf_mat[2, 2] / (np.sum(conf_mat[:, 2]) - conf_mat[0, 2])
+    G3_Pre = conf_mat[3, 3] / (np.sum(conf_mat[:, 3]) - conf_mat[0, 3])
+    G4_Pre = conf_mat[4, 4] / (np.sum(conf_mat[:, 4]) - conf_mat[0, 4])
+    G5_Pre = conf_mat[5, 5] / (np.sum(conf_mat[:, 5]) - conf_mat[0, 5])
 
-    weighted_s3 = 0.25 * (f1_score(slice3_3[0, :], slice3_3[1, :], average="micro")) + 0.25 * (
-        f1_score(slice4_3[0, :], slice4_3[1, :], average="micro")) + 0.25 * (f1_score(slice5_3[0, :], slice5_3[1, :], average="micro")) + 0.125 * (
-                      f1_score(slice1_3[0, :], slice1_3[1, :], average="micro")) + 0.125 * (f1_score(slice2_3[0, :], slice2_3[1, :], average="micro"))
+    F1_Stroma = 2 * Stroma_Pre * Stroma_Recall / (Stroma_Pre + Stroma_Recall)
+    F1_Normal = 2 * Normal_Pre * Normal_Recall / (Normal_Pre + Normal_Recall)
+    F1_G3 = 2 * G3_Pre * G3_Recall / (G3_Pre + G3_Recall)
+    F1_G4 = 2 * G4_Pre * G4_Recall / (G4_Pre + G4_Recall)
+    F1_G5 = 2 * G5_Pre * G5_Recall / (G5_Pre + G5_Recall)
+
+    weighted = 0.25 * F1_G3 + 0.25 * F1_G4 + 0.25 * F1_G5 + 0.125 * F1_Normal + 0.125 * F1_Stroma
 
 
-    total_score = 0.6*weighted_s1 + 0.2*weighted_s3 + 0.2*weighted_s2
+
+    return weighted
 
 
-    return s1_score, s2_score, s3_score, weighted_s1, weighted_s2, weighted_s3, total_score
+#inputs: weighted scores for all 3 subsets, outputs: total weighted score
+def total_score(s1_weighted, s2_weighted, s3_weighted):
+
+    return 0.6*s1_weighted + 0.2*s2_weighted + s3_weighted
