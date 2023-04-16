@@ -47,4 +47,4 @@ def aggc_eval(true, pred):
 #inputs: weighted scores for all 3 subsets, outputs: total weighted score
 def total_score(s1_weighted, s2_weighted, s3_weighted):
 
-    return 0.6*s1_weighted + 0.2*s2_weighted + s3_weighted
+    return 0.6*s1_weighted + 0.2*s2_weighted + 0.2*s3_weighted
