@@ -8,8 +8,8 @@ The image database is sourced from the Automated Gleason Grading Challenge 2022 
 In order to run the model, we need to first process the image and feed the preprocessed img into our trained model. 
 The `demo.py` contrained the following 2 steps:
 ### 1. Preprocessing Step: 
-Inputs: Original slide image, annotation masks, output_patch_folder
-\n Outputs: Patch masks for the complete image and all 5 classes 
+Inputs: Original slide image, annotation masks, output_patch_folder  
+Outputs: Patch masks for the complete image and all 5 classes 
 
 `preprocess_img.py` contains all preprocessing steps including 
 * Image segmentation into 256 x 256 patches using the Patchify library
