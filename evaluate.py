@@ -14,6 +14,18 @@ from PIL import Image
 
 # f = args.filename
 # print(f)
+
+def heatmap(c0,c1,c2,c3,c4):
+    c0 = [c0* c for c in [0, 255, 0]]
+    c1 = [c1* c for c in [255, 0, 0]]
+    c2 = [c2* c for c in [0,255,255]]
+    c3 = [c3* c for c in [255,0,255]]
+    c4 = [c4* c for c in [0, 0,255]]
+    pixel = [sum(x) for x in zip(c0,c1,c2,c3,c4)]
+    return pixel
+    
+
+
 def Evaluate(param,out_dir,patch_folder,image):
     ################### define model
     # define a device which allows you to use GPU resources
@@ -99,6 +111,7 @@ def Evaluate(param,out_dir,patch_folder,image):
     H = np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1,5))
     G = np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
     G_pred =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
+    G_pred_color =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1,3))
     print(H.shape)
     for i in range(len(label)):
         x = index_list_x[i]
@@ -112,17 +125,17 @@ def Evaluate(param,out_dir,patch_folder,image):
         H[x,y,4] = yprob[i][4]
 
         #Gpred
+        #green=normal(0, 255, 0), blue=stroma (255, 0, 0), yellow=3 (0,255,255), fuchsia=4 (255,0,255), red=5 (0, 0,255)
+        # alpha 
+        G_pred_color[x,y] = heatmap(yprob[i][0],yprob[i][1],yprob[i][2],yprob[i][3],yprob[i][4])
+        
         G_pred[x,y] = np.argmax(yprob[i])+1
-
+        #print(np.max(yprob[i]))
         #Ground truth
         #print(i,x,y)
         G[x,y] = label[i]+1
         #print(np.argmax(yprob[i]),label[i])
 
-    #G_pred = np.argmax(H, axis = -1) + 1
-    #print(G_pred)
-    #print(G)
-    print("max",np.max(G_pred))
 
     #create black and white classification masks
     # H = cv2.convertScaleAbs(H, alpha=(255.0))
@@ -134,16 +147,29 @@ def Evaluate(param,out_dir,patch_folder,image):
     #G = cv2.convertScaleAbs(G, alpha=(255.0))
     #cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
     G = ((G - G.min()) * (1/(5 - G.min()) * 255)).astype('uint8')
+
     #G.save(str(out_dir+"Ground_truth.jpg"))
     cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
+    cv2.imwrite(str(out_dir+"G_pred_color.jpg"), G_pred_color)
     
 
-    #G_pred = cv2.convertScaleAbs(G_pred, alpha=(255.0))
-    #cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
+
     G_pred = ((G_pred - G_pred.min()) * (1/(5 - G_pred.min()) * 255)).astype('uint8')
+    kernel = np.ones((5,5),np.uint8)
+    #G_pred = cv2.morphologyEx(G_pred, cv2.MORPH_OPEN, kernel)
     cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
     print("result output")
     for i in range(5):
         tmp_h = H[:,:,i]
         tmp_h = ((tmp_h - tmp_h.min()) * (1/(1 - tmp_h.min()) * 255)).astype('uint8')
+        tmp_h = cv2.morphologyEx(tmp_h, cv2.MORPH_CLOSE, kernel)
+        H[:,:,i] = tmp_h
         cv2.imwrite(str(out_dir+"G_pred_class"+str(i)+".jpg"), tmp_h)
+
+    G_pred_after_mor =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
+    for i in range(len(label)):
+        x = index_list_x[i]
+        y = index_list_y[i]
+        G_pred_after_mor[x,y] = np.argmax(H[x,y])+1
+    G_pred_after_mor = ((G_pred_after_mor - G_pred_after_mor.min()) * (1/(5 - G_pred_after_mor.min()) * 255)).astype('uint8')
+    cv2.imwrite(str(out_dir+"G_pred_after_mor.jpg"), G_pred_after_mor)
