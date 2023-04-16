@@ -128,22 +128,21 @@ def Evaluate(param,out_dir,patch_folder,image):
     # H = cv2.convertScaleAbs(H, alpha=(255.0))
     # cv2.imwrite(str(out_dir+"heatmap.jpg"), H)
     np.save(str(out_dir+"H"), H)
+    np.save(str(out_dir+"G"), G)
+    np.save(str(out_dir+"G_pred"), G_pred)
 
     #G = cv2.convertScaleAbs(G, alpha=(255.0))
     #cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
     G = ((G - G.min()) * (1/(5 - G.min()) * 255)).astype('uint8')
     #G.save(str(out_dir+"Ground_truth.jpg"))
     cv2.imwrite(str(out_dir+"Ground_truth.jpg"), G)
-    np.save(str(out_dir+"G"), G)
+    
 
     #G_pred = cv2.convertScaleAbs(G_pred, alpha=(255.0))
     #cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
     G_pred = ((G_pred - G_pred.min()) * (1/(5 - G_pred.min()) * 255)).astype('uint8')
     cv2.imwrite(str(out_dir+"G_pred.jpg"), G_pred)
-    np.save(str(out_dir+"G_pred"), G_pred)
     print("result output")
-
-
     for i in range(5):
         tmp_h = H[:,:,i]
         tmp_h = ((tmp_h - tmp_h.min()) * (1/(1 - tmp_h.min()) * 255)).astype('uint8')
