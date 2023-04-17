@@ -1,12 +1,12 @@
 
-from preprocess.preprocess_img_function import preprocess
+from preprocess.preprocess_img_function import preprocess_test
 from evaluate import Evaluate
 
 ################### preprocess #################
 img_path = "/data/acharl15/gleason_grading/test_folder/Subset1_Test_24.tiff"
 ann_path = "/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_24/"
 output_patch_folder = "./demo_result/patch/"
-#preprocess(img_path,ann_path,output_patch_folder)
+preprocess_test(img_path,ann_path,output_patch_folder)
 
 
 #################run model ######################

@@ -1,0 +1,644 @@
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_40.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_40/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_40.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(88560, 40320, 3)
+345 157
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_40/
+load img
+(36425, 5) (36425, 5)
+
+Saving the object
+(345, 157, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_17.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_17/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_17/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_17.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(87840, 48960, 3)
+343 191
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_17/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_17/
+load img
+(53740, 5) (53740, 5)
+
+Saving the object
+(343, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_31.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_31/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_31.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G3_Mask.tif']
+path exists
+<class 'str'>
+(87840, 46080, 3)
+343 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_31/
+load img
+(42004, 5) (42004, 5)
+
+Saving the object
+(343, 176, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_26.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_26/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_26/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_26.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90000, 48000, 3)
+351 187
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_26/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_26/
+load img
+(52005, 5) (52005, 5)
+
+Saving the object
+(351, 187, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_6/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(92160, 48960, 3)
+360 191
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_6/
+load img
+(56090, 5) (56090, 5)
+
+Saving the object
+(360, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_41.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_41/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_41.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/G3_Mask.tif']
+path exists
+<class 'str'>
+(87120, 46080, 3)
+340 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_41/
+load img
+(49359, 5) (49359, 5)
+
+Saving the object
+(340, 180, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_21.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_21/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_21/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_21.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(78480, 47040, 3)
+306 183
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_21/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_21/
+load img
+(36953, 5) (36953, 5)
+
+Saving the object
+(306, 169, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_12/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_12/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(81360, 48960, 3)
+317 191
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_12/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_12/
+load img
+(47354, 5) (47354, 5)
+
+Saving the object
+(314, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_13/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_13/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(89280, 46080, 3)
+348 180
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_13/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_13/
+load img
+(33082, 5) (33082, 5)
+
+Saving the object
+(302, 177, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_18.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_18/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_18/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_18.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(51120, 42240, 3)
+199 165
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_18/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_18/
+load img
+(21553, 5) (21553, 5)
+
+Saving the object
+(196, 160, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_27.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_27/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_27/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_27.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(82080, 48000, 3)
+320 187
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_27/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_27/
+load img
+(37211, 5) (37211, 5)
+
+Saving the object
+(320, 187, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_38.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_38/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_38.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90000, 46080, 3)
+351 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_38/
+load img
+(40285, 5) (40285, 5)
+
+Saving the object
+(351, 180, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_33.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_33/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_33.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(88560, 46080, 3)
+345 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_33/
+load img
+(45950, 5) (45950, 5)
+
+Saving the object
+(345, 180, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_44.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_44/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_44.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(56880, 46080, 3)
+222 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_44/
+load img
+(25820, 5) (25820, 5)
+
+Saving the object
+(218, 175, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_39.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_39/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_39.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(80640, 40320, 3)
+315 157
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_39/
+load img
+(36806, 5) (36806, 5)
+
+Saving the object
+(315, 157, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_9/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(81360, 48960, 3)
+317 191
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_9/
+load img
+(41006, 5) (41006, 5)
+
+Saving the object
+(317, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_11/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_11/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(56160, 35520, 3)
+219 138
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_11/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_11/
+load img
+(11571, 5) (11571, 5)
+
+Saving the object
+(215, 132, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_2/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_2/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(92880, 48960, 3)
+362 191
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_2/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_2/
+load img
+(53675, 5) (53675, 5)
+
+Saving the object
+(362, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_7/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(60480, 45120, 3)
+236 176
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_7/
+load img
+(30007, 5) (30007, 5)
+
+Saving the object
+(231, 173, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_45.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_45/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_45.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(72720, 46080, 3)
+284 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_45/
+load img
+(34943, 5) (34943, 5)
+
+Saving the object
+(266, 176, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_10/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_10/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90000, 47040, 3)
+351 183
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_10/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_10/
+load img
+(12627, 5) (12627, 5)
+
+Saving the object
+(261, 174, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_37.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_37/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_37.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90000, 46080, 3)
+351 180
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_37/
+load img
+(36868, 5) (36868, 5)
+
+Saving the object
+(315, 180, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_19.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_19/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_19/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_19.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(80640, 43200, 3)
+315 168
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_19/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_19/
+load img
+(39232, 5) (39232, 5)
+
+Saving the object
+(315, 160, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_3/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(68400, 48960, 3)
+267 191
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_3/
+load img
+(33064, 5) (33064, 5)
+
+Saving the object
+(257, 191, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_8/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90000, 45120, 3)
+351 176
+loaded model
+model_inputed
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_8/
+load img
+(47205, 5) (47205, 5)
+
+Saving the object
+(351, 176, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_1/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_1/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(90720, 46080, 3)
+354 180
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_1/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_1/
+load img
+(40284, 5) (40284, 5)
+
+Saving the object
+(300, 180, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_28.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_28/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_28/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_28.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(80640, 48960, 3)
+315 191
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_28/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_28/
+load img
+(48298, 5) (48298, 5)
+
+Saving the object
+(315, 190, 5)
+result output
+usage: test_evaluate.py [-h]
+
+Preprocess + Run model
+
+options:
+  -h, --help  show this help message and exit
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_29.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_29/
+new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_29/
+/data/acharl15/gleason_grading/test_folder/Subset1_Test_29.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/
+['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/Stroma_Mask.tif']
+path exists
+<class 'str'>
+(58320, 40320, 3)
+227 157
+loaded model
+model_inputed
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_29/
+/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_29/
+load img
+(25274, 5) (25274, 5)
+
+Saving the object
+(224, 152, 5)
+result output

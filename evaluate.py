@@ -3,7 +3,7 @@ from torchvision import transforms
 from Model.model import Model_name
 from mtdp import build_model
 from collections import OrderedDict
-from Dataset.dataset import Dataset_name
+from Dataset.dataset import Dataset_name_test
 import torch.utils.data as data_utils
 import torch.nn as nn
 import numpy as np
@@ -23,7 +23,6 @@ def heatmap(c0,c1,c2,c3,c4):
     c4 = [c4* c for c in [0, 0,255]]
     pixel = [sum(x) for x in zip(c0,c1,c2,c3,c4)]
     return pixel
-    
 
 
 def Evaluate(param,out_dir,patch_folder,image):
@@ -62,7 +61,7 @@ def Evaluate(param,out_dir,patch_folder,image):
         ])
 
 
-    img = Dataset_name(str(patch_folder+"patch_mask.jpg"), 
+    img = Dataset_name_test(str(patch_folder+"patch_mask.jpg"), 
                         str(patch_folder+"patch_mask_"),
                         image,transform = transform)
     #print(img)
@@ -82,11 +81,12 @@ def Evaluate(param,out_dir,patch_folder,image):
             
             out = model(x.to(device))
             ypred = m(out)
+            #print(ypred.shape)
             #print("out",out,"label",y)
-            for j in range(len(y)):
+            for j in range(ypred.shape[0]):
                 index_list_x.append(idx[0][j])
                 index_list_y.append(idx[1][j])
-                label.append(y[j])
+                label.append([y[0][j],y[1][j],y[2][j],y[3][j],y[4][j]])
                 yprob.append(ypred.cpu().detach().numpy()[j])
 
     label = np.array(label)
@@ -113,7 +113,7 @@ def Evaluate(param,out_dir,patch_folder,image):
     G_pred =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
     G_pred_color =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1,3))
     print(H.shape)
-    for i in range(len(label)):
+    for i in range(label.shape[0]):
         x = index_list_x[i]
         y = index_list_y[i]
 
@@ -133,7 +133,8 @@ def Evaluate(param,out_dir,patch_folder,image):
         #print(np.max(yprob[i]))
         #Ground truth
         #print(i,x,y)
-        G[x,y] = label[i]+1
+        if np.sum(label[i]) != 0:
+            G[x,y] = np.argmax(label[i])+1
         #print(np.argmax(yprob[i]),label[i])
 
 
@@ -171,5 +172,6 @@ def Evaluate(param,out_dir,patch_folder,image):
         x = index_list_x[i]
         y = index_list_y[i]
         G_pred_after_mor[x,y] = np.argmax(H[x,y])+1
+    np.save(str(out_dir+"G_pred_after_mor"), G_pred_after_mor)
     G_pred_after_mor = ((G_pred_after_mor - G_pred_after_mor.min()) * (1/(5 - G_pred_after_mor.min()) * 255)).astype('uint8')
     cv2.imwrite(str(out_dir+"G_pred_after_mor.jpg"), G_pred_after_mor)
