@@ -30,5 +30,5 @@ output_patch_folder = args.output_patch_folder
 out_dir = args.out_dir
 
 model = args.model
-preprocess_test(img_path,ann_path,output_patch_folder)
+#preprocess_test(img_path,ann_path,output_patch_folder)
 Evaluate(model,out_dir,output_patch_folder,img_path)

@@ -12,7 +12,7 @@ def aggc_eval(true, pred):
 
     # calculate confusion matrix for each subset
     conf_mat=np.zeros((6,6))
-    conf_mat[1:6,1:6] = confusion_matrix(true, pred)
+    conf_mat[1:6,1:6] = confusion_matrix(true, pred)+0.1
 
 
     # Weighted-average F1-score = 0.25 * F1-score_G3 + 0.25 * F1-score_G4 +0.25 * F1-score_G5 +0.125 * F1-score_Normal +0.125 * F1-score_Stroma, where:

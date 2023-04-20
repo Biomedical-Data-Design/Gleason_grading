@@ -1,644 +1,464 @@
+[ WARN:0@30.091] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@30.092] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@30.092] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@30.092] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@30.093] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@30.093] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_40.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_40/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_40.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_40/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_2/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_2/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_2/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_2/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_2/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_2/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(88560, 40320, 3)
-345 157
+(20160, 29760, 3)
+78 116
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_40/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_2/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_2/
 load img
-(36425, 5) (36425, 5)
+(487, 5) (487, 5)
 
 Saving the object
-(345, 157, 5)
+(73, 112, 5)
 result output
+[ WARN:0@57.022] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.022] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.023] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.023] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.023] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.024] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_17.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_17/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_17/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_17.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_17/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_12/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_12/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_12/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_12/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_12/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_12/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(87840, 48960, 3)
-343 191
+(57600, 22080, 3)
+225 86
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_17/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_17/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_12/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_12/
 load img
-(53740, 5) (53740, 5)
+(689, 5) (689, 5)
 
 Saving the object
-(343, 191, 5)
+(221, 82, 5)
 result output
+[ WARN:0@104.907] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@104.908] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@104.909] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@104.909] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@104.909] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@104.910] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_31.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_31/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_31.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_31/G3_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_9/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_9/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(87840, 46080, 3)
-343 180
+(49680, 37440, 3)
+194 146
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_31/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_9/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_9/
 load img
-(42004, 5) (42004, 5)
+(1464, 5) (1464, 5)
 
 Saving the object
-(343, 176, 5)
+(188, 139, 5)
 result output
+[ WARN:0@13.078] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@13.079] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@13.079] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@13.079] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@13.079] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@13.080] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_26.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_26/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_26/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_26.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_26/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_13/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_13/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_13/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_13/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_13/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_13/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(90000, 48000, 3)
-351 187
+(12240, 25920, 3)
+47 101
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_26/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_26/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_13/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_13/
 load img
-(52005, 5) (52005, 5)
+(616, 5) (616, 5)
 
 Saving the object
-(351, 187, 5)
+(43, 94, 5)
 result output
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.249] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_6/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_6/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_1/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_1/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(92160, 48960, 3)
-360 191
+(43200, 21120, 3)
+168 82
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_6/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_1/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_1/
 load img
-(56090, 5) (56090, 5)
+(909, 5) (909, 5)
 
 Saving the object
-(360, 191, 5)
+(167, 78, 5)
 result output
+[ WARN:0@21.257] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@21.258] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@21.258] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@21.258] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@21.259] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@21.259] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_41.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_41/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_41.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_41/G3_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_8/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_8/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_8/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_8/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_8/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_8/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(87120, 46080, 3)
-340 180
+(13680, 36480, 3)
+53 142
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_41/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_8/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_8/
 load img
-(49359, 5) (49359, 5)
+(918, 5) (918, 5)
 
 Saving the object
-(340, 180, 5)
+(49, 115, 5)
 result output
+[ WARN:0@77.073] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@77.074] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@77.075] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@77.075] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@77.075] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@77.075] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_21.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_21/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_21/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_21.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_21/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_3/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_3/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(78480, 47040, 3)
-306 183
+(54720, 25920, 3)
+213 101
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_21/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_21/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_3/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_3/
 load img
-(36953, 5) (36953, 5)
+(1381, 5) (1381, 5)
 
 Saving the object
-(306, 169, 5)
+(209, 94, 5)
 result output
+[ WARN:0@7.287] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@7.287] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@7.288] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@7.288] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@7.288] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@7.289] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_12/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_12/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_12.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_12/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_11/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_11/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(81360, 48960, 3)
-317 191
+(13680, 10560, 3)
+53 41
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_12/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_12/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_11/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_11/
 load img
-(47354, 5) (47354, 5)
+(221, 5) (221, 5)
 
 Saving the object
-(314, 191, 5)
+(45, 31, 5)
 result output
+[ WARN:0@66.739] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@66.739] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@66.740] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@66.740] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@66.740] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@66.741] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_13/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_13/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_13.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_13/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_4.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_4/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_4.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_4/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(89280, 46080, 3)
-348 180
+(57600, 21120, 3)
+225 82
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_13/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_13/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_4/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_4/
 load img
-(33082, 5) (33082, 5)
+(1044, 5) (1044, 5)
 
 Saving the object
-(302, 177, 5)
+(222, 74, 5)
 result output
+[ WARN:0@93.525] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@93.526] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@93.527] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@93.527] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@93.527] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@93.528] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_18.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_18/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_18/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_18.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_18/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_6/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_6/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_6.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_6/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_6/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_6/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_6/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(51120, 42240, 3)
-199 165
+(66240, 30720, 3)
+258 120
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_18/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_18/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_6/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_6/
 load img
-(21553, 5) (21553, 5)
+(1113, 5) (1113, 5)
 
 Saving the object
-(196, 160, 5)
+(254, 115, 5)
 result output
+[ WARN:0@43.777] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@43.778] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@43.778] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@43.778] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@43.779] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@43.779] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_27.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_27/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_27/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_27.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_27/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_15.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_15/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_15.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_15/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(82080, 48000, 3)
-320 187
+(26640, 30720, 3)
+104 120
 loaded model
 model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_27/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_27/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_15/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_15/
 load img
-(37211, 5) (37211, 5)
+(1273, 5) (1273, 5)
 
 Saving the object
-(320, 187, 5)
+(95, 116, 5)
 result output
+[ WARN:0@26.170] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@26.170] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@26.171] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@26.171] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@26.171] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@26.171] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_38.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_38/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_38.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_38/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_5.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_5/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_5/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_5.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_5/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_5/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_5/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_5/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(90000, 46080, 3)
-351 180
+(45360, 13440, 3)
+177 52
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_38/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_5/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_5/
 load img
-(40285, 5) (40285, 5)
+(376, 5) (376, 5)
 
 Saving the object
-(351, 180, 5)
+(173, 48, 5)
 result output
+[ WARN:0@57.321] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.322] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.322] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.323] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.323] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@57.323] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_33.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_33/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_33.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_33/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_7/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_7/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_7/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_7/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_7/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_7/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(88560, 46080, 3)
-345 180
+(53280, 24000, 3)
+208 93
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_33/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_7/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_7/
 load img
-(45950, 5) (45950, 5)
+(919, 5) (919, 5)
 
 Saving the object
-(345, 180, 5)
+(202, 81, 5)
 result output
+[ WARN:0@5.225] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@5.226] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@5.226] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@5.226] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@5.226] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@5.227] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_44.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_44/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_44.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_44/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_16.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_16/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_16/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_16.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_16/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_16/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_16/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(56880, 46080, 3)
-222 180
+(9360, 14400, 3)
+36 56
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_44/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_16/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_16/
 load img
-(25820, 5) (25820, 5)
+(321, 5) (321, 5)
 
 Saving the object
-(218, 175, 5)
+(32, 55, 5)
 result output
+[ WARN:0@139.585] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@139.586] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@139.586] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@139.586] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@139.587] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@139.587] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_39.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_39/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_39.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_39/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_10/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_10/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(80640, 40320, 3)
-315 157
+(69120, 30720, 3)
+270 120
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_39/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_10/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_10/
 load img
-(36806, 5) (36806, 5)
+(1336, 5) (1336, 5)
 
 Saving the object
-(315, 157, 5)
+(267, 112, 5)
 result output
+[ WARN:0@110.512] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask.jpg'): can't open file for writing: permission denied
+[ WARN:0@110.513] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask_Normal.jpg'): can't open file for writing: permission denied
+[ WARN:0@110.514] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask_Stroma.jpg'): can't open file for writing: permission denied
+[ WARN:0@110.514] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask_G3.jpg'): can't open file for writing: permission denied
+[ WARN:0@110.514] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask_G4.jpg'): can't open file for writing: permission denied
+[ WARN:0@110.515] global loadsave.cpp:755 imwrite_ imwrite_('/data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/patch_mask_G5.jpg'): can't open file for writing: permission denied
 usage: test_evaluate.py [-h]
 
 Preprocess + Run model
 
 options:
   -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_9/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_9.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_9/Stroma_Mask.tif']
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_14.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/ /data/acharl15/gleason_grading/test_folder/patch/Subset2_Test_14/
+/data/acharl15/gleason_grading/test_folder/Subset2_Test_14.tiff /data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/
+['/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset2_Test_annotation/Subset2_Test_14/Stroma_Mask.tif']
 path exists
 <class 'str'>
-(81360, 48960, 3)
-317 191
+(62640, 31680, 3)
+244 123
 loaded model
 model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_9/
+new_directory /data/acharl15/gleason_grading/test_folder/result/Subset2_Test_14/
+/data/acharl15/gleason_grading/test_folder/result/Subset2_Test_14/
 load img
-(41006, 5) (41006, 5)
+(1387, 5) (1387, 5)
 
 Saving the object
-(317, 191, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_11/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_11/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_11.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_11/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(56160, 35520, 3)
-219 138
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_11/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_11/
-load img
-(11571, 5) (11571, 5)
-
-Saving the object
-(215, 132, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_2/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_2/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_2.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_2/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(92880, 48960, 3)
-362 191
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_2/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_2/
-load img
-(53675, 5) (53675, 5)
-
-Saving the object
-(362, 191, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_7/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_7.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_7/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(60480, 45120, 3)
-236 176
-loaded model
-model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_7/
-load img
-(30007, 5) (30007, 5)
-
-Saving the object
-(231, 173, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_45.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_45/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_45.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_45/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(72720, 46080, 3)
-284 180
-loaded model
-model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_45/
-load img
-(34943, 5) (34943, 5)
-
-Saving the object
-(266, 176, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_10/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_10/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_10.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_10/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(90000, 47040, 3)
-351 183
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_10/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_10/
-load img
-(12627, 5) (12627, 5)
-
-Saving the object
-(261, 174, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_37.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_37/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_37.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_37/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(90000, 46080, 3)
-351 180
-loaded model
-model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_37/
-load img
-(36868, 5) (36868, 5)
-
-Saving the object
-(315, 180, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_19.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_19/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_19/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_19.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_19/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(80640, 43200, 3)
-315 168
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_19/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_19/
-load img
-(39232, 5) (39232, 5)
-
-Saving the object
-(315, 160, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_3/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_3.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G5_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_3/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(68400, 48960, 3)
-267 191
-loaded model
-model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_3/
-load img
-(33064, 5) (33064, 5)
-
-Saving the object
-(257, 191, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_8/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_8.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_8/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(90000, 45120, 3)
-351 176
-loaded model
-model_inputed
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_8/
-load img
-(47205, 5) (47205, 5)
-
-Saving the object
-(351, 176, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_1/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_1/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_1.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_1/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(90720, 46080, 3)
-354 180
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_1/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_1/
-load img
-(40284, 5) (40284, 5)
-
-Saving the object
-(300, 180, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_28.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_28/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_28/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_28.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/Normal_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_28/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(80640, 48960, 3)
-315 191
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_28/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_28/
-load img
-(48298, 5) (48298, 5)
-
-Saving the object
-(315, 190, 5)
-result output
-usage: test_evaluate.py [-h]
-
-Preprocess + Run model
-
-options:
-  -h, --help  show this help message and exit
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_29.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/ /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_29/
-new_directory /data/acharl15/gleason_grading/test_folder/patch/Subset1_Test_29/
-/data/acharl15/gleason_grading/test_folder/Subset1_Test_29.tiff /data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/
-['/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/G4_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/G3_Mask.tif', '/data/acharl15/gleason_grading/test_folder/Subset1_Test_annotation/Subset1_Test_29/Stroma_Mask.tif']
-path exists
-<class 'str'>
-(58320, 40320, 3)
-227 157
-loaded model
-model_inputed
-new_directory /data/acharl15/gleason_grading/test_folder/result/Subset1_Test_29/
-/data/acharl15/gleason_grading/test_folder/result/Subset1_Test_29/
-load img
-(25274, 5) (25274, 5)
-
-Saving the object
-(224, 152, 5)
+(241, 114, 5)
 result output

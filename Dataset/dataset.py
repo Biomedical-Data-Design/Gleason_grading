@@ -117,3 +117,33 @@ class Dataset_name_test():
             x = self.transform(x)
         idx = [row,col]
         return x, idx, label_vector
+
+
+class Dataset_Image():
+    def __init__(self, patch_mask_path,img_path, transform=None):
+        self.transform = transform
+        #img = cv2.imread(img_path,1)
+        # input must be float 32
+        self.slide_ob = openslide.OpenSlide(img_path)
+        patch_mask = cv2.imread(patch_mask_path,0)
+        ret,self.thresh = cv2.threshold(patch_mask,127,255,cv2.THRESH_BINARY)         
+        self.ROW, self.COL = np.where(self.thresh>0)
+
+    def __len__(self):
+        'denotes the total number of samples'
+        return len(self.ROW)
+
+    def __getitem__(self, index):
+        row, col = self.ROW[index], self.COL[index]
+        # relocate on the original img
+        row_left_top = int((self.slide_ob.dimensions[1]-self.thresh.shape[0]*256)/2)
+        col_left_top = int((self.slide_ob.dimensions[0]-self.thresh.shape[1]*256)/2)
+        row_start = int(row_left_top+row*256)
+        col_start = int(col_left_top+col*256)
+        x = np.array(self.slide_ob.read_region((col_start,row_start),0, (256, 256)))[:,:,:3] 
+        
+        #y = label_vector.index(255)
+        if self.transform is not None:
+            x = self.transform(x)
+        idx = [row,col]
+        return x, idx

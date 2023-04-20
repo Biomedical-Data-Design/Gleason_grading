@@ -6,7 +6,22 @@ The image database is sourced from the Automated Gleason Grading Challenge 2022 
 
 ## To run the model, Please see `demo.py` and its output directory `demo_result`
 In order to run the model, we need to first process the image and feed the preprocessed img into our trained model. 
-The `demo.py` contrained the following 2 steps:
+To run the model:
+
+`python demo.py --i /data/acharl15/gleason_grading/test_folder/Subset1_Test_24.tiff --output_folder ./demo_result/ --model ./checkpoint/Subset1_epoch36.pth --background "white"`
+--i: define original image path
+--output_folder: define result path
+--model: define pretrain model path (saved under ./checkpoint/)
+--background: define what is the color of the background of the same scans ("white","black"). 
+
+The output contains:
+1. Scalar Image: Absolute classification of each patch image. Whiter color means higher grading score.
+2. Colored Heatmap:
+Green: normal; Blue: stroma; Yellow: G3; Fuchsia: G4; Red :G5
+Each pixel value is corrected by confidence level, where ambiguous color assignment indicates lower confidence level of class assignment.
+
+
+The automated grading system contained the following 2 steps:
 ### 1. Preprocessing Step: 
 Inputs: Original slide image, annotation masks, output_patch_folder  
 Outputs: Patch masks for the complete image and all 5 classes 
