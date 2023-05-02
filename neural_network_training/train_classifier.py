@@ -44,18 +44,18 @@ import wandb
 
 
 #################### output
-out_dir = "/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/"
-isExist = os.path.exists("/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/checkpoint")
+out_dir = "/data/acharl15/gleason_grading/result/training_saved_model/subset3_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/"
+isExist = os.path.exists("/data/acharl15/gleason_grading/result/training_saved_model/subset3_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
 if not isExist:
     print("new_directory")
-    os.makedirs("/data/acharl15/gleason_grading/result/training_saved_model/Subset1_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment_experiment13/checkpoint")
+    os.makedirs("/data/acharl15/gleason_grading/result/training_saved_model/subset3_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint")
 
 #################### input 
 file = pd.read_csv("/data/acharl15/gleason_grading/file_list_all.csv")
 file = file.dropna()
 file_list = []
 for i in file["img"]:
-    if i.startswith("Subset1"):
+    if i.startswith("Subset3"):
         file_list.append(i)
     #file_list.append(i)
 file_list
@@ -119,7 +119,7 @@ val_loader = data_utils.DataLoader(val_dataset, batch_size=32, shuffle=True)
 
 wandb.init(
     # set the wandb project where this run will be logged
-    project="gleason-grading-subset1",name = 'Experiment 13',
+    project="gleason-grading-subset1",name = 'Experiment 10_2',
     
     # track hyperparameters and run metadata
     config={
@@ -131,17 +131,24 @@ wandb.init(
 
 
 ####################################define model
-
 # define a device which allows you to use GPU resources
 device = torch.device("cuda")
 # define your model
 model = Model_name()
-### utilize GPU
 model = model.to(device)
-model = torch.nn.DataParallel(model,device_ids = [0, 1])
+### utilize GPU
+param=torch.load("/data/acharl15/gleason_grading/result/training_saved_model/subset3_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint/checkpoint_epoch61.pth")
+#print(param)
+model_dict = model.state_dict()
+pretrained_dict = {k.partition('module.')[2]: v for k, v in param.items() if k.partition('module.')[2] in model_dict}
+#print(pretrained_dict)
+model_dict.update(pretrained_dict) 
+# 3. load the new state dict
+model.load_state_dict(model_dict)
+print("loaded model")
+### utilize GPU
+#print(model)
 print("model_inputed")
-print(model)
-
 ################################ define your optimizer and loss function
 label_list = np.array(label_list)
 class1 = 1-len(label_list[label_list== 0])/n
@@ -154,12 +161,12 @@ print("class weight",class_weight)
 criterion = nn.CrossEntropyLoss(weight = class_weight) # this is the loss function. Cross entropy loss is the most commonly used loss function for classification task
 optimizer = optim.SGD(model.parameters(), lr=1e-4, momentum=0.9, weight_decay = 1e-4) # you could also use Adam optimizer if you want
 # output parameter
-f = open(str(out_dir+"parameter.txt"), "a")
-f.write(str("criterion:"+"CrossEntropyLoss"+str(class_weight)+"\n"))
-f.write(str("optimizer:"+"SGD"+"lr=1e-4, momentum=0.9, weight_decay = 1e-4 \n"))
-f.write("epoch: 100 \n")
-f.write(str("train: "+str(len(train_dataset))+" val: "+str(len(val_dataset))+"\n"))
-f.close()
+# f = open(str(out_dir+"parameter.txt"), "a")
+# f.write(str("criterion:"+"CrossEntropyLoss"+str(class_weight)+"\n"))
+# f.write(str("optimizer:"+"SGD"+"lr=1e-4, momentum=0.9, weight_decay = 1e-4 \n"))
+# f.write("epoch: 100 \n")
+# f.write(str("train: "+str(len(train_dataset))+" val: "+str(len(val_dataset))+"\n"))
+# f.close()
 ################################# define your validation function
 def validate(model, val_loader,classifier,accuracy):
     model.eval()
@@ -185,7 +192,7 @@ Accuracy_train = []
 Accuracy_val = []
 num_epochs = 100 # how many times you want to iterate the dataset
 
-for epoch in range(num_epochs):  # loop over the dataset multiple times
+for epoch in range(62,500):  # loop over the dataset multiple times
     model.train()
     print("running epoch",epoch)
     loss_train = 0.0
