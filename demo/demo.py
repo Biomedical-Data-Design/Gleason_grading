@@ -1,6 +1,8 @@
 
+import sys 
+sys.path.append("../")
 from preprocess.preprocess_img_function import preprocess_image
-from run_model import Evaluate
+from test_evaluation.run_model import Evaluate
 import argparse
 from argparse import ArgumentParser
 
@@ -12,7 +14,7 @@ parser.add_argument("--i", dest="img_path", required=False,
 parser.add_argument('--output_folder', dest="out_dir", required=False,
     help="output result directory",default = './demo_result/')
 parser.add_argument('--model', dest="model", required=False,
-    help="model",default = "./checkpoint/Subset1_epoch36.pth")
+    help="model",default = "../neural_network_training/checkpoint/Subset1_epoch36.pth")
 parser.add_argument('--background', dest="bg", required=False,
     help="background color",default = "white")
 args = parser.parse_args()

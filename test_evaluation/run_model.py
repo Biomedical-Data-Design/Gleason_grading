@@ -1,5 +1,7 @@
 import torch
 from torchvision import transforms
+import sys 
+sys.path.append("../neural_network_training")
 from Model.model import Model_name
 from mtdp import build_model
 from collections import OrderedDict

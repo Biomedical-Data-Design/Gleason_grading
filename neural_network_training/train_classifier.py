@@ -135,7 +135,6 @@ wandb.init(
 device = torch.device("cuda")
 # define your model
 model = Model_name()
-model = model.to(device)
 ### utilize GPU
 param=torch.load("/data/acharl15/gleason_grading/result/training_saved_model/subset3_pretrain_100epoch_normalized_Imagenet_balanced_relu_dropout_SGD_augment/checkpoint/checkpoint_epoch61.pth")
 #print(param)
@@ -146,8 +145,10 @@ model_dict.update(pretrained_dict)
 # 3. load the new state dict
 model.load_state_dict(model_dict)
 print("loaded model")
-### utilize GPU
+### utilize GPU 
 #print(model)
+model = torch.nn.DataParallel(model)
+model = model.to(device)
 print("model_inputed")
 ################################ define your optimizer and loss function
 label_list = np.array(label_list)
