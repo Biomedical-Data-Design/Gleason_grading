@@ -8,7 +8,7 @@ The image database is sourced from the Automated Gleason Grading Challenge 2022 
 1. copy the github repo:   `git clone https://github.com/Biomedical-Data-Design-2022-2023/Gleason_grading.git`
 2. create an environment: `conda env create -f environment.yml`
 3. Go to demo folder
-`python demo.py --i /data/acharl15/gleason_grading/test_folder/Subset1_Test_24.tiff --output_folder ./demo_result/ --model ./checkpoint/Subset1_epoch36.pth --background "white"`
+`python demo.py --i /data/acharl15/gleason_grading/test_folder/Subset1_Test_24.tiff --output_folder ./demo_result/ --model ../neural_network_training/checkpoint/Subset1_epoch36.pth --background "white"`
 --i: define original image path
 --output_folder: define result path
 --model: define pretrain model path (saved under ./checkpoint/)
