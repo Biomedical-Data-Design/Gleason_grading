@@ -1,3 +1,4 @@
+from scipy.special import softmax
 import torch
 from torchvision import transforms
 import sys 
@@ -150,10 +151,18 @@ def Evaluate(param,out_dir,patch_folder,image):
         ##cv2.imwrite(str(out_dir+"G_pred_class"+str(i)+".jpg"), tmp_h)
 
     G_pred_after_mor =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1))
+    G_pred_after_mor_color =  np.zeros((np.max(index_list_x)+1,np.max(index_list_y)+1,3))
     for i in range(len(yprob)):
         x = index_list_x[i]
         y = index_list_y[i]
         G_pred_after_mor[x,y] = np.argmax(H[x,y])+1
+        tmp = softmax(H[x,y])
+        #print(np.sum(tmp))
+        G_pred_after_mor_color[x,y] = heatmap(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4])
+
     ##np.save(str(out_dir+"G_pred_after_mor"), G_pred_after_mor)
     G_pred_after_mor = ((G_pred_after_mor - G_pred_after_mor.min()) * (1/(5 - G_pred_after_mor.min()) * 255)).astype('uint8')
     cv2.imwrite(str(out_dir+"G_pred_after_mor.jpg"), G_pred_after_mor)
+    cv2.imwrite(str(out_dir+"G_pred_after_mor_color.jpg"), G_pred_after_mor_color)
+
+

@@ -22,7 +22,7 @@ args = parser.parse_args()
 #img_path = "/data/acharl15/gleason_grading/test_folder/Subset1_Test_24.tiff"
 #output_folder = "./demo_result/"
 # if your scan are in black, change bg = "black"
-preprocess_image(args.img_path,args.out_dir,bg=args.bg)
+#preprocess_image(args.img_path,args.out_dir,bg=args.bg)
 #################run model ######################
 #model = "./checkpoint/Subset1_epoch36.pth"
 Evaluate(args.model,args.out_dir,args.out_dir,args.img_path)
