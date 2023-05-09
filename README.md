@@ -29,7 +29,7 @@ Colored image label: Green: normal; Blue: stroma; Yellow: G3; Fuchsia: G4; Red :
 Each pixel value is corrected by confidence level, where ambiguous color assignment indicates lower confidence level of class assignment.
 
 
-The automated grading system contains the following 2 steps:
+The automated grading system also contains the following 2 steps:
 ### 1. Preprocessing Step: See folder preprocess
 ### 2.  Neural Network Training: see folder neural_network_training
 * Trained model parameters are saved under the `neural_network_training/checkpoint` folder
