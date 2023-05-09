@@ -4,7 +4,7 @@
 
 The image database is sourced from the Automated Gleason Grading Challenge 2022 (AGGC2022). 
 
-## To run the model, Please following step 
+## To run the model, do the following:
 1. copy the github repo:   `git clone https://github.com/Biomedical-Data-Design-2022-2023/Gleason_grading.git`
 2. create an environment: `conda env create -f environment.yml`
 3. Go to demo folder
@@ -29,7 +29,7 @@ Colored image label: Green: normal; Blue: stroma; Yellow: G3; Fuchsia: G4; Red :
 Each pixel value is corrected by confidence level, where ambiguous color assignment indicates lower confidence level of class assignment.
 
 
-The automated grading system contained the following 2 steps:
+The automated grading system contains the following 2 steps:
 ### 1. Preprocessing Step: See folder preprocess
 ### 2.  Neural Network Training: see folder neural_network_training
 * Trained model parameters are saved under the `neural_network_training/checkpoint` folder
